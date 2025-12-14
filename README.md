@@ -1,16 +1,221 @@
 
 
-# Literature Details
 
-**RATs-NAS: Redirection of Adjacent Trails on Graph Convolutional Networks for Predictor-Based Neural Architecture Search**  
+
+## RATs-NAS: Redirection of Adjacent Trails on Graph Convolutional Networks for Predictor-Based Neural Architecture Search
 *IEEE Transactions on Artificial Intelligence (2024)*
 
 **Paper**: https://ieeexplore.ieee.org/abstract/document/10685480  
 **Source Code**: Not released
 
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RAT-GCN (RAT: adaptive adjacency reweighting) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, partition-based search sampling |
+| Transferability | Without transferability |
+
 ---
 
-### Key Settings
+## CIMNet: Joint Search for Neural Network and Computing-in-Memory Architecture
+*IEEE Micro (2024)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10551739  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal vector-based, fixed length: architecture features + quantization strategy (Quant) + CIM hardware parameters (OU count, ADC resolution, cell precision, etc.) + input image resolution |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## HKT-FNAS: Search Robust Neural Architecture via Heterogeneous Knowledge Transfer for Defect Detection of PV Energy Storage Modules
+*Tsinghua Science and Technology (2025)*
+
+**Paper**: https://file.sciopen.com/sciopen_public/1941065596264796162.pdf  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Latin hypercube sampling |
+| Architecture Representation | Single-modal vector-based, variable length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RBF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | With transferability |
+
+---
+
+## Renas: Relativistic evaluation of neural architecture search
+*CVPR (2021)*
+
+**Paper**: https://openaccess.thecvf.com/content/CVPR2021/papers/Xu_ReNAS_Relativistic_Evaluation_of_Neural_Architecture_Search_CVPR_2021_paper.pdf  
+**Source Code**: https://www.mindspore.cn/resources/hub/
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance, pairwise |
+| Model Selection | LeNet |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Accuracy Prediction with Non-neural Model for Neural Architecture Search
+*2021-Arxiv*
+
+**Paper**: https://arxiv.org/pdf/2007.04785  
+**Source Code**: https://github.com/renqianluo/GBDT-NAS
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, sequence-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GBDT |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | Without transferability |
+
+---
+
+## CARL: Causality-guided Architecture Representation Learning for an Interpretable Performance Predictor
+*ICCV (2025)*
+
+**Paper**: https://arxiv.org/abs/2506.04001  
+**Source Code**: https://github.com/jihan4431/CARL
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based Key features + redundant features ---> cross-architecture random recombination |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN + MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## From Hand-Crafted Metrics to Evolved Training-Free Performance Predictors for Neural Architecture Search via Genetic Programming
+*2025-arXiv*
+
+**Paper**: https://arxiv.org/abs/2505.15832  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Zero-cost indicators: FLOPs, Snip, L2-norm, Zen, ZiCo, MeCo, etc. |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Zero-cost symbolic function expressions |
+| Model Training | Evolved through Symbolic Regression (SR) + Genetic Programming |
+| Interaction with Search Algorithm | Offline |
+| Transferability | With transferability |
+
+---
+
+## Listwise ranking predictor for evolutionary neural architecture search
+*Swarm and Evolutionary Computation (2025)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S2210650225001142  
+**Source Code**: https://github.com/96linan/LRP
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance, listwise |
+| Model Selection | RBF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## A lightweight neural network search algorithm based on in-place distillation and performance prediction for hardware-aware optimization
+*Engineering Applications of Artificial Intelligence (2025)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S0952197625007754  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective ACC + Inference latency + Params |
+| Prediction Type | Absolute performance |
+| Model Selection | Gaussian Process + Customized GloKernel |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, randomly select t from top-h |
+| Transferability | Without transferability |
+
+---
+
+## A holistic approach for resource-constrained neural network architecture search
+*Applied Soft Computing (2025)*
+
+**Paper**: https://www.sciencedirect.com/science/article/pii/S1568494625001437  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Manual selection + Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance, ranking-aware (1 if better than ancestor, 0 otherwise) |
+| Model Selection | Random Forest + k-Nearest Neighbors + Gradient Boosting Classifier |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, predictor judges as 1, then taken as new sample |
+| Transferability | Without transferability |
+
+---
+
+## PerfSeer: An Efficient and Accurate Deep Learning Models Performance Predictor  
+*2025-arXiv*
+
+**Paper**: https://arxiv.org/abs/2502.01206  
+**Source Code**: https://github.com/upuuuuuu/PerfSeer
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal, graph-based: global features (node count, edge count, graph density, FLOPs, memory access statistics, batch size, arithmetic intensity (FLOPs/memory access)) + node features (kernel size, FLOPs, memory access info (MAC, total input/weight/output tensor size), arithmetic intensity, proportion in the whole model) + edge features (data flow: tensor size + tensor shape) |
+| Objective Dimension | Multi-objective ACC + Execution time + Memory usage + Streaming Multiprocessor Utilization (SM Utilization) |
+| Prediction Type | Absolute performance |
+| Model Selection | SeerNet (GNN) + MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Graph Masked Autoencoder Enhanced Predictor for Neural Architecture Search
+*IJCAI (2022)*
+
+**Paper**: https://www.ijcai.org/proceedings/2022/0432.pdf  
+**Source Code**: https://github.com/kunjing96/GMAENAS
 
 | Item | Value |
 | --- | --- |
@@ -18,1512 +223,2182 @@
 | Architecture Representation | Single-modal, graph-based |
 | Objective Dimension | Single-objective |
 | Prediction Type | Absolute performance |
-| Predictor Model | RAT-GCN (RAT: adaptive adjacency reweighting) |
+| Model Selection | GAT + MLP |
+| Model Training | Self-supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Neural architecture search with interpretable meta-features and fast predictors
+*Information Sciences (2023)*
+
+**Paper**: https://www.sciencedirect.com/science/article/pii/S0020025523012276?casa_token=mSCJN6wKExUAAAAA:Any8R4hT8DhyyoognrX49JrsNCdw6nhoDmb-UkETpsaSQpM9IVagKE4HUdU3kw2M2guI34e5wNSr  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal (Architecture encoding, search space meta-features, and #Params) |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RF |
 | Model Training | Supervised |
-| Interaction with Search Algorithm | Online (partition-based search sampling) |
-| Transferability (Task, Dataset, Search Space) | Without transferability |
-***  
-Title：[CIMNet: Joint Search for Neural Network and Computing-in-Memory Architecture](https://ieeexplore.ieee.org/abstract/document/10551739)  
-Publication：IEEE Micro-2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal Vector-based Fixed length: architecture features + quantization strategy (Quant) + CIM hardware parameters (OU count, ADC resolution, cell precision, etc.) + input image resolution  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[HKT-FNAS: Search Robust Neural Architecture via Heterogeneous Knowledge Transfer for Defect Detection of PV Energy Storage Modules](https://file.sciopen.com/sciopen_public/1941065596264796162.pdf)  
-Publication：Tsinghua Science and Technology, 2025  
-Source Code：-----  
-Architecture Sampling：Latin Hypercube Sampling (LHS)  
-Architecture Representation：Single-modal Vector-based Variable length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RBF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: TOP-K  
-Transferability on Task/Dataset/Search Space: With Transferability (progressive search space with online updating)  
-***  
-Title：[Renas: Relativistic evaluation of neural architecture search](https://openaccess.thecvf.com/content/CVPR2021/papers/Xu_ReNAS_Relativistic_Evaluation_of_Neural_Architecture_Search_CVPR_2021_paper.pdf)  
-Publication：CVPR 2021
-Source Code：https://www.mindspore.cn/resources/hub/
-Architecture Sampling：Random
-Architecture Representation：Single-modal/Graph-based encoding  
-Objective Dimension：Single-objective (Accuracy) 
-Prediction Type：Relative performance (Pairwise)  
-Model Selection：LeNet   
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline
-Transferability on Task/Dataset/Search Space: Without Transferability
-***  
-Title：[Accuracy Prediction with Non-neural Model for Neural Architecture Search](https://arxiv.org/pdf/2007.04785)  
-Publication：2021-Arxiv
-Source Code：https://github.com/renqianluo/GBDT-NAS.
-Architecture Sampling：Random
-Architecture Representation：Single-modal/Sequence-based encoding  
-Objective Dimension：Single-objective (Accuracy) 
-Prediction Type：Absolute performance
-Model Selection：GBDT   
-Model Training：Supervised  
-Interaction with Search Algorithm：Online/Top-K selection
-Transferability on Task/Dataset/Search Space: Without Transferability
-***  
-Title：[CARL: Causality-guided Architecture Representation Learning for an Interpretable Performance Predictor](https://arxiv.org/abs/2506.04001)   
-Publication：ICCV 2025  
-Source Code：https://github.com/jihan4431/CARL  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based Key features + redundant features ---> cross-architecture random recombination  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GCN + MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[From Hand-Crafted Metrics to Evolved Training-Free Performance Predictors for Neural Architecture Search via Genetic Programming](https://arxiv.org/abs/2505.15832)  
-Publication：2025-arXiv  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Zero-cost indicators: FLOPs, Snip, L2-norm, Zen, ZiCo, MeCo, etc.  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Zero-cost symbolic function expressions  
-Model Training：Evolved through Symbolic Regression (SR) + Genetic Programming  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：With Transferability (direct transfer without fine-tuning)  
-***  
-Title：[Listwise ranking predictor for evolutionary neural architecture search](https://www.sciencedirect.com/science/article/abs/pii/S2210650225001142)  
-Publication：Swarm and Evolutionary Computation, 2025  
-Source Code：https://github.com/96linan/LRP  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (listwise)  
-Model Selection：RBF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[A lightweight neural network search algorithm based on in-place distillation and performance prediction for hardware-aware optimization](https://www.sciencedirect.com/science/article/abs/pii/S0952197625007754)  
-Publication：Engineering Applications of Artificial Intelligence, 2025  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length    
-Objective Dimension：Multi-objective ACC + Inference latency + Params  
-Prediction Type：Absolute performance  
-Model Selection：Gaussian Process + Customized GloKernel  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: randomly select t from top-h  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[A holistic approach for resource-constrained neural network architecture search](https://www.sciencedirect.com/science/article/pii/S1568494625001437)  
-Publication：Applied Soft Computing, 2025  
-Source Code：-----  
-Architecture Sampling：Manual selection + Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance, ranking-aware (1 if better than ancestor, 0 otherwise)  
-Model Selection：Random Forest + k-Nearest Neighbors + Gradient Boosting Classifier  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: predictor judges as 1, then taken as new sample  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[PerfSeer: An Efficient and Accurate Deep Learning Models Performance Predictor](https://arxiv.org/abs/2502.01206)  
-Publication：2025-arXiv  
-Source Code：https://github.com/upuuuuuu/PerfSeer  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal Graph-based: global features (node count, edge count, graph density, FLOPs, memory access statistics, batch size, arithmetic intensity (FLOPs/memory access)) + node features (kernel size, FLOPs, memory access info (MAC, total input/weight/output tensor size), arithmetic intensity, proportion in the whole model) + edge features (data flow: tensor size + tensor shape)  
-Objective Dimension：Multi-objective ACC + Execution time + Memory usage + Streaming Multiprocessor Utilization (SM Utilization)  
-Prediction Type：Absolute performance  
-Model Selection：SeerNet (GNN) + MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Graph Masked Autoencoder Enhanced Predictor for Neural Architecture Search](https://www.ijcai.org/proceedings/2022/0432.pdf)  
-Publication：IJCAI-2022  
-Source Code：https://github.com/kunjing96/GMAENAS  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GAT + MLP  
-Model Training：Self-supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Neural architecture search with interpretable meta-features and fast predictors](https://www.sciencedirect.com/science/article/pii/S0020025523012276?casa_token=mSCJN6wKExUAAAAA:Any8R4hT8DhyyoognrX49JrsNCdw6nhoDmb-UkETpsaSQpM9IVagKE4HUdU3kw2M2guI34e5wNSr)  
-Publication：Information Sciences, 2023  
-Source Code：-----  
-Architecture Sampling：Random 
-Architecture Representation：Multi-modal (Architecture encoding, search space meta-features, and #Params)
-Objective Dimension：Single-objective (Accuracy)  
-Prediction Type：Absolute performance  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Semi-supervised neural architecture search](https://proceedings.neurips.cc/paper/2020/hash/77305c2f862ad1d353f55bf38e5a5183-Abstract.html)  
-Publication：NeurIPS, 2020  
-Source Code：-----  
-Architecture Sampling：Random
-Architecture Representation：Single-modal Sequence-based  
-Objective Dimension：Single-objective (Accuracy)  
-Prediction Type：Absolute performance  
-Model Selection：LSTM   
-Model Training：Semi-Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Score Predictor-Assisted Evolutionary Neural Architecture Search](https://ieeexplore.ieee.org/abstract/document/10841460)  
-Publication：IEEE Transactions on Emerging Topics in Computational Intelligence, 2025  
-Source Code：-----  
-Architecture Sampling：All individuals from the top N generations  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective (error rate)  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Progressive Neural Architecture Generation with Weaker Predictors](https://link.springer.com/chapter/10.1007/978-981-96-2064-7_17)  
-Publication：International Conference on Multimedia Modeling, 2024  
-Source Code：-----  
-Architecture Sampling：Unconditional diffusion model generation  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：XGBoost  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online, re-training with ranking-weighted samples  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[HGNAS: Hardware-Aware Graph Neural Architecture Search for Edge Devices](https://ieeexplore.ieee.org/abstract/document/10644077)  
-Publication：IEEE Transactions on Computers, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal Graph-based (architecture graph + device one-hot)  
-Objective Dimension：Single-objective with 2 predictors (latency + peak memory usage)  
-Prediction Type：Absolute performance  
-Model Selection：GNN + MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Rethinking neural architecture representation for predictors: Topological encoding in pixel space](https://www.sciencedirect.com/science/article/abs/pii/S1566253524007036)  
-Publication：Information Fusion, 2025  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal Graph encoding + Image representation + Text representation  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Multi-channel predictor: CLIP-ViT/RN50 (image representation), CLIP-Text Encoder (text representation), GCN (graph encoding)  
-Model Training：Mainly supervised, supplemented with self-supervised  
-Interaction with Search Algorithm：NB101 / NB201 offline, DARTS online  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Shapley-guided pruning for efficient graph neural architecture prediction in distributed learning environments](https://www.sciencedirect.com/science/article/pii/S0020025524016098)  
-Publication：Information Sciences, 2025  
-Source Code：https://github.com/BeObm/DGNAP  
-Architecture Sampling：Controlled hierarchical random sampling  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GCN + MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: re-encode pruned search space as new samples  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：MLP-GNAS: [Meta-learning-based predictor-assisted Genetic Neural Architecture Search system](https://www.sciencedirect.com/science/article/pii/S1568494624013012)    
-Publication：Applied Soft Computing, 2025  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：CNN-based performance predictor  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Evolutionary Neural Architecture Search with Performance Predictor Based on Hybrid Encodings](https://ieeexplore.ieee.org/abstract/document/10805362)  
-Publication：International Conference on Information Science and Technology, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Transformer-based VAE + Graph flow-based encoding module  
-Model Training：Self-supervised  
-Interaction with Search Algorithm：Online: top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Single-Domain Generalized Predictor for Neural Architecture Search System](https://ieeexplore.ieee.org/abstract/document/10438213)  
-Publication：IEEE Transactions on Computers, 2024  
-Source Code：-----  
-Architecture Sampling：Sampling from multiple task datasets in the source domain  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GCN + FCN  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：With Transferability (can transfer to unseen target search spaces)  
-***  
-Title：[Delta-NAS: Difference of Architecture Encoding for Predictor-based Evolutionary Neural Architecture Search](https://ieeexplore.ieee.org/abstract/document/10943463)  
-Publication：IEEE/CVF Winter Conference on Applications of Computer Vision, 2025  
-Source Code：-----  
-Architecture Sampling：Random sampling of architecture pairs  
-Architecture Representation：Difference-based encoding between architectures  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance  
-Model Selection：-----  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Improving Routability Prediction via NAS Using a Smooth One-Shot Augmented Predictor](https://ieeexplore.ieee.org/abstract/document/11014419)    
-Publication：International Symposium on Quality Electronic Design, 2025  
-Source Code：-----  
-Architecture Sampling：Sampling subnets from multiple one-shot networks  
-Architecture Representation：Multi-modal (architecture features + Params + FLOPs + memory demand) Vector-based Fixed length  
-Objective Dimension：Single-objective (AUC)  
-Prediction Type：Absolute performance  
-Model Selection：XGBoost  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Accelerating one-shot neural architecture search via constructing a sparse search space](https://www.sciencedirect.com/science/article/pii/S0950705124012541)  
-Publication：Knowledge-Based Systems, 2024  
-Source Code：-----  
-Architecture Sampling：Random subnet sampling from supernet  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GBDT  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[CNNGen: A Generator and a Dataset for Energy-Aware Neural Architecture Search](https://inria.hal.science/hal-04957651/)  
-Publication：European Symposium on Artificial Neural Networks, 2024  
-Source Code：-----  
-Architecture Sampling：CNNGen generates samples using grammar-based generation  
-Architecture Representation：Multi-modal PNG image + Python code + Vector (architecture features + epochs + FLOPs + params)  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Image predictor + Code predictor + Decision Tree  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Set-Nas: Sample-Efficient Training For Neural Architecture Search With Strong Predictor And Stratified Sampling](https://ieeexplore.ieee.org/abstract/document/10647243)  
-Publication：IEEE International Conference on Image Processing, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GCN  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Progressive Neural Predictor with Score-Based Sampling](https://ieeexplore.ieee.org/abstract/document/10651529)  
-Publication：IJCNN, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: score-based sampling (score top-k)  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Semi-supervised accuracy predictor-based multi-objective neural architecture search](https://www.sciencedirect.com/science/article/abs/pii/S0925231224012438)  
-Publication：Neurocomputing, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：SVR / RF / XGB  
-Model Training：Semi-supervised  
-Interaction with Search Algorithm：Online: update two datasets respectively with prediction accuracy + prediction confidence, also used to update predictor  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Inference latency prediction for CNNs on heterogeneous mobile devices and ML frameworks](https://www.sciencedirect.com/science/article/abs/pii/S0166531624000348)  
-Publication：Performance Evaluation, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based  
-Objective Dimension：Single-objective (end-to-end inference latency)  
-Prediction Type：Absolute performance  
-Model Selection：Lasso / Random Forest / GBDT / MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[CAP: A Context-Aware Neural Predictor for NAS](https://arxiv.org/abs/2406.02056)  
-Publication：2024-arXiv  
-Source Code：https://github.com/jihan4431/CAP  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GIN  
-Model Training：Self-supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Fine-grained complexity-driven latency predictor in hardware-aware neural architecture search using composite loss](https://www.sciencedirect.com/science/article/abs/pii/S0020025524006972)  
-Publication：Information Sciences, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal: Graph-based + Complexity vector (FLOPs, Params, Activations)  
-Objective Dimension：Single-objective (Latency)  
-Prediction Type：Absolute performance  
-Model Selection：GCN + MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[A Neural Architecture Predictor based on GNN-Enhanced Transformer](https://proceedings.mlr.press/v238/xiang24a.html)  
-Publication：International Conference on Artificial Intelligence and Statistics, 2024  
-Source Code：https://github.com/GNET  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GNN + Transformer  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Multi-population evolutionary neural architecture search with stacked generalization](https://www.sciencedirect.com/science/article/abs/pii/S0925231224004351)  
-Publication：Neurocomputing, 2024  
-Source Code：-----  
-Architecture Sampling：All individuals from the first three generations for training set, first generation randomly generated  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：KNN + RF + SVM  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[GreenNAS: A Green Approach to the Hyperparameters Tuning in Deep Learning](https://www.mdpi.com/2227-7390/12/6/850)  
-Publication：Mathematics, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RF / SVR  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[On Latency Predictors for Neural Architecture Search](https://proceedings.mlsys.org/paper_files/paper/2024/hash/f03cb785864596fa5901f1359d23fd81-Abstract-Conference.html)  
-Publication：Proceedings of Machine Learning and Systems, 2024  
-Source Code：https://github.com/abdelfattah-lab/nasflat  
-Architecture Sampling：Encoding-based, select diverse samples using Cosine Similarity + KMeans clustering, then fine-tune on target device with a few samples  
-Architecture Representation：Multi-modal: Graph-based + Hardware embeddings  
-Objective Dimension：Single-objective (Inference latency)  
-Prediction Type：Absolute performance  
-Model Selection：GAT + Dense Graph Flow (DGF)  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Latency-Constrained Neural Architecture Search Method for Efficient Model Deployment on RISC-V Devices](https://www.mdpi.com/2079-9292/13/4/692)  
-Publication：Electronics, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective (Inference latency)  
-Prediction Type：Absolute performance  
-Model Selection：DNN  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Towards Efficient Neural Networks Through Predictor-Assisted NSGA-III for Anomaly Traffic Detection of IoT](https://ieeexplore.ieee.org/abstract/document/10403928)  
-Publication：IEEE Transactions on Cognitive Communications and Networking, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (Error rate, FLOPs, MAC)  
-Prediction Type：Absolute performance  
-Model Selection：CART  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: sampling from Pareto front  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[AutoGAN-DSP: Stabilizing GAN architecture search with deterministic score predictors](https://www.sciencedirect.com/science/article/abs/pii/S0925231223013103)  
-Publication：Neurocomputing, 2024  
-Source Code：https://github.com/APinCan/GAN_Architecture_Search_with_Predictors  
-Architecture Sampling：Based on substructures selected by RL learner + generated complete GAN architectures  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective (2 predictors: Inception Score + Frechet Inception Distance)  
-Prediction Type：Absolute performance  
-Model Selection：GCN + LSTM + FCN  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: initially updated with RL-selected substructures, later not updated  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[A Sampling Method for Performance Predictor Based on Contrastive Learning](https://link.springer.com/chapter/10.1007/978-981-99-8388-9_18)  
-Publication：Australasian Joint Conference on Artificial Intelligence, 2023  
-Source Code：-----  
-Architecture Sampling：Representative samples chosen via architecture augmentation and clustering  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GCN + (RF / DT / SVR / KNN / GBRT)  
-Model Training：Self-supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[PINAT: A Permutation INvariance Augmented Transformer for NAS Predictor](https://ojs.aaai.org/index.php/AAAI/article/view/26076)  
-Publication：AAAI, 2023  
-Source Code：https://github.com/ShunLu91/PINAT  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Transformer + FCN  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[How predictors affect the RL-based search strategy in Neural Architecture Search?](https://www.sciencedirect.com/science/article/abs/pii/S0957417423022443)    
-Publication：Expert Systems with Applications, 2024  
-Source Code：https://github.com/tjdeng/RPNASM  
-Architecture Sampling：RL controller-based strategy sampling  
-Architecture Representation：Single-modal Graph/Vector-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：MLP / GCN / BANANAS / BOHAMIANN / BONAS / NAO / SemiNAS / Transformer  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: sampling based on continuously optimized controller strategy  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[DGL: Device Generic Latency Model for Neural Architecture Search on Mobile Devices](https://ieeexplore.ieee.org/abstract/document/10042973)  
-Publication：TMC, 2023  
-Source Code：-----  
-Architecture Sampling：-----  
-Architecture Representation：Multi-modal (Architecture + Device configuration)  
-Objective Dimension：Single-objective (Latency)  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Convolutional architecture search based on particle swarm algorithm for functional brain network classification](https://www.sciencedirect.com/science/article/abs/pii/S1568494623010670)  
-Publication：Applied Soft Computing, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (relation-aware)  
-Model Selection：SVM  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[LLM Performance Predictors are good initializers for Architecture Search](https://arxiv.org/abs/2310.16712)  
-Publication：arXiv, 2023  
-Source Code：https://github.com/UBC-NLP/llmas  
-Architecture Sampling：Random  
-Architecture Representation：Text (prompt)  
-Objective Dimension：Single-objective (BLEU score)  
-Prediction Type：Absolute performance  
-Model Selection：LLM  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Pruning Large Language Models via Accuracy Predictor](https://arxiv.org/abs/2309.09507)  
-Publication：arXiv, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GBDT  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Hidden Design Principles in Zero-Cost Performance Predictors for Neural Architecture Search](https://ieeexplore.ieee.org/abstract/document/10191474)  
-Publication：IJCNN, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Network hyperparameters (depth, width, group width, etc.)  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Zero-cost predictors (grad_norm / SNIP / GRASP / SynFlow / Fisher / Jacov / logdet)  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[MPENAS: Multi-fidelity Predictor-guided Evolutionary Neural Architecture Search with Zero-cost Proxies](https://dl.acm.org/doi/abs/10.1145/3583131.3590513)  
-Publication：GECCO, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal (Architecture encoding + ZC proxy outputs + Learning curve data)  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：NGBoost  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-n  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Fast Evolutionary Neural Architecture Search by Contrastive Predictor with Linear Regions](https://dl.acm.org/doi/abs/10.1145/3583131.3590452)  
-Publication：GECCO, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (relation-aware)  
-Model Selection：GCN  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: active learning-based  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Latency-Aware Neural Architecture Performance Predictor with Query-to-Tier Technique](https://ieeexplore.ieee.org/abstract/document/10155437)  
-Publication：IEEE Transactions on Circuits and Systems for Video Technology, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal (structural features, FLOPs, #parameters) Feature vector-based Fixed length  
-Objective Dimension：Multi-objective (Accuracy + Latency)  
-Prediction Type：Accuracy: Relative performance (column-aware) + Absolute performance (tiered scoring)  
-Model Selection：Transformer  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Multi-Predict: Few Shot Predictors For Efficient Neural Architecture Search](https://arxiv.org/abs/2306.02459)  
-Publication：arXiv, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Fixed length — Accuracy → Vector-based (zero-cost metrics: parameter gradients, gradient norms, activation sensitivity); Latency → Vector-based (latency on different devices)  
-Objective Dimension：Single-objective with 2 predictors (Accuracy + Latency)  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：With Transferability (fine-tuning on new search space)  
-***  
-Title：[Architecture Augmentation for Performance Predictor via Graph Isomorphism](https://ieeexplore.ieee.org/abstract/document/10109990)  
-Publication：TCYB, 2023  
-Source Code：-----  
-Architecture Sampling：Random + isomorphism augmentation  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Pooling Graph Convolutional Networks for Structural Performance Prediction](https://link.springer.com/chapter/10.1007/978-3-031-25891-6_1)  
-Publication：International Conference on Machine Learning, Optimization, and Data Science, 2022  
-Source Code：https://github.com/wendli01/morp_gcn  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal Graph-based (operations + kernel size, number of filters + node centrality measures such as harmonic centrality)  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GCN + MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://ojs.aaai.org/index.php/AAAI/article/view/29649)  
-Publication：AAAI, 2023  
-Source Code：https://github.com/Zhengsh123/DCLP  
-Architecture Sampling：Random + data augmentation  
-Architecture Representation：Single-modal Graph-based (positive samples perturbed by edge disturbance and attribute masking)  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GIN  
-Model Training：Self-supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[A General-Purpose Transferable Predictor for Neural Architecture Search](https://epubs.siam.org/doi/abs/10.1137/1.9781611977653.ch81)  
-Publication：Proceedings of the 2023 SIAM International Conference on Data Mining, 2023  
-Source Code：-----  
-Architecture Sampling：Random + non-random perturbation augmentation  
-Architecture Representation：Single-modal Computational Graph (CG)-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GNN + MLP  
-Model Training：Self-supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：With Transferability (fine-tuning on new search space)  
-***  
-Title：[Neural predictor-based automated graph classifier framework](https://link.springer.com/article/10.1007/s10994-022-06287-5)  
-Publication：Machine Learning, 2022  
-Source Code：-----  
-Architecture Sampling：Component-based controlled hierarchical random sampling  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[PRE-NAS: Evolutionary Neural Architecture Search With Predictor](https://ieeexplore.ieee.org/abstract/document/9975797)  
-Publication：TEVC, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RF / GCN / SVR / MLP / Bayesian Ridge / Kernel Ridge / Linear  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: percentile-based stratified sampling according to prediction validation accuracy  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Work-in-Progress: Utilizing latency and accuracy predictors for efficient hardware-aware NAS](https://ieeexplore.ieee.org/abstract/document/9943117)  
-Publication：International Conference on Hardware/Software Codesign and System Synthesis, 2022  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：-----  
-Objective Dimension：Multi-objective (Accuracy + Latency)  
-Prediction Type：Absolute performance  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[BERTPerf: Inference Latency Predictor for BERT on ARM big.LITTLE Multi-Core Processors](https://ieeexplore.ieee.org/abstract/document/9919203)  
-Publication：IEEE Workshop on Signal Processing Systems, 2022  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based (BERT hyperparameter configurations)  
-Objective Dimension：Single-objective (Inference latency)  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Generalized Global Ranking-Aware Neural Architecture Ranker for Efficient Image Classifier Search](https://dl.acm.org/doi/abs/10.1145/3503161.3548149)  
-Publication：Proceedings of the 30th ACM International Conference on Multimedia, 2022  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal (structural features, FLOPs, #parameters) Feature vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (column-aware) + Absolute performance (tiered scoring)  
-Model Selection：Transformer  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Towards Leveraging Structure for Neural Predictor in NAS](https://cke.um.ac.ir/article_42708.html)  
-Publication：Computer and Knowledge Engineering, 2022  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GBDT  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[MAPLE-Edge: A Runtime Latency Predictor for Edge Devices](https://openaccess.thecvf.com/content/CVPR2022W/EVW/html/Nair_MAPLE-Edge_A_Runtime_Latency_Predictor_for_Edge_Devices_CVPRW_2022_paper.html)  
-Publication：CVPR, 2022  
-Source Code：-----  
-Architecture Sampling：Targeted uniform sampling  
-Architecture Representation：Multi-modal (Hardware descriptors + Architecture encoding)  
-Objective Dimension：Single-objective (Latency)  
-Prediction Type：Absolute performance  
-Model Selection：-----  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Arch-Graph: Acyclic Architecture Relation Predictor for Task-Transferable Neural Architecture Search](https://openaccess.thecvf.com/content/CVPR2022/html/Huang_Arch-Graph_Acyclic_Architecture_Relation_Predictor_for_Task-Transferable_Neural_Architecture_Search_CVPR_2022_paper.html)  
-Publication：CVPR, 2022  
-Source Code：https://github.com/Centaurus982034/Arch-Graph  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal (Architecture encoding: Graph-based + Task embeddings: Vector-based including data distribution, task requirements, input/output types, etc.)  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (relation-aware + column-aware)  
-Model Selection：GCN (relation-aware) + Architecture relation graph construction (column-aware)  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：With Transferability (fine-tuning on new tasks)  
-***  
-Title：[WPNAS: Neural Architecture Search by jointly using Weight Sharing and Predictor](https://arxiv.org/abs/2203.02086)    
-Publication：arXiv, 2022    
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector/Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：MLP / RNN / Transformer  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Automated design of CNN architecture based on efficient evolutionary search](https://www.sciencedirect.com/science/article/abs/pii/S092523122200340X)  
-Publication：Neurocomputing, 2022  
-Source Code：-----  
-Architecture Sampling：All individuals from the first three generations  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[CURIOUS: Efficient Neural Architecture Search Based on a Performance Predictor and Evolutionary Search](https://ieeexplore.ieee.org/abstract/document/9698855)  
-Publication：IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2022  
-Source Code：-----  
-Architecture Sampling：Iterative method; first generation sampled randomly from initial pool generated by QMC, then trained predictor selects top-k from remaining pool until termination  
-Architecture Representation：-----  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GBDT  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[TNASP: A Transformer-based NAS Predictor with a Self-evolution Framework](https://proceedings.neurips.cc/paper_files/paper/2021/hash/7fa1575cbd7027c9a799983a485c3c2f-Abstract.html)  
-Publication：NeurIPS, 2021  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based (Laplace matrix)  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Transformer + MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: using historical evaluation data as constraints to guide predictor updates  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Not All Operations Contribute Equally: Hierarchical Operation-Adaptive Predictor for Neural Architecture Search](https://openaccess.thecvf.com/content/ICCV2021/html/Chen_Not_All_Operations_Contribute_Equally_Hierarchical_Operation-Adaptive_Predictor_for_Neural_ICCV_2021_paper.html)  
-Publication：ICCV, 2021  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Operation-adaptive attention module + Cell-level hierarchical gating module  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[FBNetV3: Joint Architecture-Recipe Search Using Predictor Pretraining](https://openaccess.thecvf.com/content/CVPR2021/html/Dai_FBNetV3_Joint_Architecture-Recipe_Search_Using_Predictor_Pretraining_CVPR_2021_paper.html)  
-Publication：CVPR, 2021  
-Source Code：-----  
-Architecture Sampling：Constraint-based iterative optimization  
-Architecture Representation：Multi-modal (Architecture features + Training recipes)  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Self-supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[SSRNAS: Search Space Reduced One-shot NAS by a Recursive Attention-based Predictor with Cell Tensor-flow Diagram](https://ieeexplore.ieee.org/abstract/document/9533297)  
-Publication：IJCNN, 2021  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Recursive GAT  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: sampling from iteratively optimized architecture pool  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[RANK-NOSH: Efficient Predictor-Based Architecture Search via Non-Uniform Successive Halving](https://openaccess.thecvf.com/content/ICCV2021/html/Wang_RANK-NOSH_Efficient_Predictor-Based_Architecture_Search_via_Non-Uniform_Successive_Halving_ICCV_2021_paper.html)  
-Publication：ICCV, 2021  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (relation-aware)  
-Model Selection：GIN + MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Homogeneous Architecture Augmentation for Neural Predictor](https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Homogeneous_Architecture_Augmentation_for_Neural_Predictor_ICCV_2021_paper.html)  
-Publication：CoRR, 2021  
-Source Code：https://github.com/lyq998/HAAP  
-Architecture Sampling：Random + isomorphism augmentation  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[HELP: Hardware-Adaptive Efficient Latency Prediction for NAS via Meta-Learning](https://proceedings.neurips.cc/paper/2021/hash/e3251075554389fe91d17a794861d47b-Abstract.html)  
-Publication：NeurIPS, 2021  
-Source Code：https://github.com/HayeonLee/HELP  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal (Graph/Vector-based + Hardware embeddings)  
-Objective Dimension：Single-objective (Latency)  
-Prediction Type：Absolute performance  
-Model Selection：GCN / MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：With Transferability (fine-tuning on new devices)  
-***  
-Title：[Pareto-Optimal Progressive Neural Architecture Search](https://dl.acm.org/doi/abs/10.1145/3449726.3463146)  
-Publication：Proceedings of the Genetic and Evolutionary Computation Conference Companion, 2021  
-Source Code：-----  
-Architecture Sampling：Exhaustive search over all 1-block cells  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (Accuracy + Training time)  
-Prediction Type：Absolute performance  
-Model Selection：LSTM (Accuracy) + NNLS + Dynamic re-indexing (Training time)  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: sampling from Pareto front after each cell expansion  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Neural predictor based quantum architecture search](https://iopscience.iop.org/article/10.1088/2632-2153/ac28dd/meta)  
-Publication：Machine Learning: Science and Technology, 2021  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Tensor-based Variable length  
-Objective Dimension：Single-objective (Validation accuracy / Ground state energy)  
-Prediction Type：Absolute performance  
-Model Selection：CNN + LSTM  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：With Transferability (across different circuit depths and quantum bit scales)  
-***  
-Title：[A Novel Training Protocol for Performance Predictors of Evolutionary Neural Architecture Search Algorithms](https://ieeexplore.ieee.org/document/9336721)  
-Publication：TEVC, 2021  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (relation-aware)  
-Model Selection：SVM + GBDT + DTree + RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Reducing energy consumption of Neural Architecture Search: An inference latency prediction framework](https://www.sciencedirect.com/science/article/abs/pii/S221067072100041X)  
-Publication：Sustainable Cities and Society, 2021  
-Source Code：-----  
-Architecture Sampling：Random + increased sampling probability for high-latency architectures  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective (Inference latency)  
-Prediction Type：Absolute performance  
-Model Selection：LSTM + LightGBM  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Accelerating neural architecture search using performance prediction](https://arxiv.org/pdf/1705.10823)  
-Publication：2017-arXiv  
-Source Code：-----  
-Architecture Sampling：Random sampling  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective (Accuracy)  
-Prediction Type：Absolute performance  
-Model Selection：SVM and RF
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Semi-supervised neural architecture search
+*NeurIPS (2020)*
+
+**Paper**: https://proceedings.neurips.cc/paper/2020/hash/77305c2f862ad1d353f55bf38e5a5183-Abstract.html  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, sequence-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | LSTM |
+| Model Training | Semi-Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Score Predictor-Assisted Evolutionary Neural Architecture Search
+*IEEE Transactions on Emerging Topics in Computational Intelligence (2025)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10841460  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | All individuals from the top N generations |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective (error rate) |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Progressive Neural Architecture Generation with Weaker Predictors
+*International Conference on Multimedia Modeling (2024)*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-981-96-2064-7_17  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Unconditional diffusion model generation |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | XGBoost |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, re-training with ranking-weighted samples |
+| Transferability | Without transferability |
+
+---
+
+
+## HGNAS: Hardware-Aware Graph Neural Architecture Search for Edge Devices
+*IEEE Transactions on Computers (2024)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10644077  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal, graph-based (architecture graph + device one-hot) |
+| Objective Dimension | Single-objective with 2 predictors (latency + peak memory usage) |
+| Prediction Type | Absolute performance |
+| Model Selection | GNN + MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+## Rethinking neural architecture representation for predictors: Topological encoding in pixel space
+*Information Fusion (2025)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S1566253524007036  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal Graph encoding + Image representation + Text representation |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Multi-channel predictor: CLIP-ViT/RN50 (image representation), CLIP-Text Encoder (text representation), GCN (graph encoding) |
+| Model Training | Mainly supervised, supplemented with self-supervised |
+| Interaction with Search Algorithm | NB101 / NB201 offline, DARTS online |
+| Transferability | Without transferability |
+
+---
+
+## Shapley-guided pruning for efficient graph neural architecture prediction in distributed learning environments
+*Information Sciences (2025)*
+
+**Paper**: https://www.sciencedirect.com/science/article/pii/S0020025524016098  
+**Source Code**: https://github.com/BeObm/DGNAP
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Controlled hierarchical random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN + MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, re-encode pruned search space as new samples |
+| Transferability | Without transferability |
+
+---
+
+## Meta-learning-based predictor-assisted Genetic Neural Architecture Search system
+*Applied Soft Computing (2025)*
+
+**Paper**: https://www.sciencedirect.com/science/article/pii/S1568494624013012  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | CNN-based performance predictor |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Evolutionary Neural Architecture Search with Performance Predictor Based on Hybrid Encodings
+*International Conference on Information Science and Technology (2024)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10805362  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Transformer-based VAE + Graph flow-based encoding module |
+| Model Training | Self-supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | Without transferability |
+
+---
+
+## Single-Domain Generalized Predictor for Neural Architecture Search System
+*IEEE Transactions on Computers (2024)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10438213  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Sampling from multiple task datasets in the source domain |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN + FCN |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | With transferability |
+
+---
+
+## Delta-NAS: Difference of Architecture Encoding for Predictor-based Evolutionary Neural Architecture Search
+*IEEE/CVF Winter Conference on Applications of Computer Vision (2025)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10943463  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling sampling of architecture pairs |
+| Architecture Representation | Difference-based encoding between architectures |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance |
+| Model Selection | ----- |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Improving Routability Prediction via NAS Using a Smooth One-Shot Augmented Predictor
+*International Symposium on Quality Electronic Design (2025)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/11014419  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Sampling subnets from multiple one-shot networks |
+| Architecture Representation | Multi-modal (architecture features + Params + FLOPs + memory demand) vector-based, fixed length |
+| Objective Dimension | Single-objective (AUC) |
+| Prediction Type | Absolute performance |
+| Model Selection | XGBoost |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Accelerating one-shot neural architecture search via constructing a sparse search space
+*Knowledge-Based Systems (2024)*
+
+**Paper**: https://www.sciencedirect.com/science/article/pii/S0950705124012541  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling subnet sampling from supernet |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GBDT |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## CNNGen
+
+**CNNGen: A Generator and a Dataset for Energy-Aware Neural Architecture Search**  
+*European Symposium on Artificial Neural Networks (2024)*
+
+**Paper**: https://inria.hal.science/hal-04957651/  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | CNNGen generates samples using grammar-based generation |
+| Architecture Representation | Multi-modal PNG image + Python code + Vector (architecture features + epochs + FLOPs + params) |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Image predictor + Code predictor + Decision Tree |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Set-Nas: Sample-Efficient Training For Neural Architecture Search With Strong Predictor And Stratified Sampling
+*IEEE International Conference on Image Processing (2024)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10647243  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | Without transferability |
+
+---
+
+## Progressive Neural Predictor with Score-Based Sampling
+*IJCNN (2024)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10651529  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal Vector-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, score-based sampling (score top-k) |
+| Transferability | Without transferability |
+
+---
+
+## Semi-supervised accuracy predictor-based multi-objective neural architecture search
+*Neurocomputing (2024)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S0925231224012438  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal Vector-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | SVR / RF / XGB |
+| Model Training | Semi-supervised |
+| Interaction with Search Algorithm | Online, update two datasets respectively with prediction accuracy + prediction confidence, also used to update predictor |
+| Transferability | Without transferability |
+
+---
+
+## Inference latency prediction for CNNs on heterogeneous mobile devices and ML frameworks
+*Performance Evaluation (2024)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S0166531624000348  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal Vector-based |
+| Objective Dimension | Single-objective (end-to-end inference latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | Lasso / Random Forest / GBDT / MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## CAP: A Context-Aware Neural Predictor for NAS
+*2024-arXiv*
+
+**Paper**: https://arxiv.org/abs/2406.02056  
+**Source Code**: https://github.com/jihan4431/CAP
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GIN |
+| Model Training | Self-supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Fine-grained complexity-driven latency predictor in hardware-aware neural architecture search using composite loss
+*Information Sciences (2024)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S0020025524006972  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal: Graph-based + Complexity vector (FLOPs, Params, Activations) |
+| Objective Dimension | Single-objective (Latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN + MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## A Neural Architecture Predictor based on GNN-Enhanced Transformer
+*International Conference on Artificial Intelligence and Statistics (2024)*
+
+**Paper**: https://proceedings.mlr.press/v238/xiang24a.html  
+**Source Code**: https://github.com/GNET
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GNN + Transformer |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Multi-population evolutionary neural architecture search with stacked generalization
+*Neurocomputing (2024)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S0925231224004351  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | All individuals from the first three generations for training set, first generation randomly generated |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | KNN + RF + SVM |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## GreenNAS: A Green Approach to the Hyperparameters Tuning in Deep Learning 
+*Mathematics (2024)*
+
+**Paper**: https://www.mdpi.com/2227-7390/12/6/850  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal Vector-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RF / SVR |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## On Latency Predictors for Neural Architecture Search
+*Proceedings of Machine Learning and Systems (2024)*
+
+**Paper**: https://proceedings.mlsys.org/paper_files/paper/2024/hash/f03cb785864596fa5901f1359d23fd81-Abstract-Conference.html  
+**Source Code**: https://github.com/abdelfattah-lab/nasflat
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Encoding-based, select diverse samples using Cosine Similarity + KMeans clustering, then fine-tune on target device with a few samples |
+| Architecture Representation | Multi-modal: Graph-based + Hardware embeddings |
+| Objective Dimension | Single-objective (Inference latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | GAT + Dense Graph Flow (DGF) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Latency-Constrained Neural Architecture Search Method for Efficient Model Deployment on RISC-V Devices
+*Electronics (2024)*
+
+**Paper**: https://www.mdpi.com/2079-9292/13/4/692  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective (Inference latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | DNN |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Towards Efficient Neural Networks Through Predictor-Assisted NSGA-III for Anomaly Traffic Detection of IoT
+*IEEE Transactions on Cognitive Communications and Networking (2024)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10403928  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (Error rate, FLOPs, MAC) |
+| Prediction Type | Absolute performance |
+| Model Selection | CART |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, sampling from Pareto front |
+| Transferability | Without transferability |
+
+---
+
+## AutoGAN-DSP: Stabilizing GAN architecture search with deterministic score predictors  
+*Neurocomputing (2024)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S0925231223013103  
+**Source Code**: https://github.com/APinCan/GAN_Architecture_Search_with_Predictors
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Based on substructures selected by RL learner + generated complete GAN architectures |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective (2 predictors: Inception Score + Frechet Inception Distance) |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN + LSTM + FCN |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, initially updated with RL-selected substructures, later not updated |
+| Transferability | Without transferability |
+
+---
+
+## A Sampling Method for Performance Predictor Based on Contrastive Learning
+*Australasian Joint Conference on Artificial Intelligence (2023)*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-981-99-8388-9_18  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Representative samples chosen via architecture augmentation and clustering |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN + (RF / DT / SVR / KNN / GBRT) |
+| Model Training | Self-supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## PINAT: A Permutation INvariance Augmented Transformer for NAS Predictor 
+*AAAI (2023)*
+
+**Paper**: https://ojs.aaai.org/index.php/AAAI/article/view/26076  
+**Source Code**: https://github.com/ShunLu91/PINAT
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Transformer + FCN |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## How predictors affect the RL-based search strategy in Neural Architecture Search?
+*Expert Systems with Applications (2024)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S0957417423022443  
+**Source Code**: https://github.com/tjdeng/RPNASM
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | RL controller-based strategy sampling |
+| Architecture Representation | Single-modal Graph/Vector-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP / GCN / BANANAS / BOHAMIANN / BONAS / NAO / SemiNAS / Transformer |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, sampling based on continuously optimized controller strategy |
+| Transferability | Without transferability |
+
+---
+
+## DGL: Device Generic Latency Model for Neural Architecture Search on Mobile Devices
+*TMC (2023)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10042973  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | ----- |
+| Architecture Representation | Multi-modal (Architecture + Device configuration) |
+| Objective Dimension | Single-objective (Latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Convolutional architecture search based on particle swarm algorithm for functional brain network classification
+*Applied Soft Computing (2023)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S1568494623010670  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance, relation-aware |
+| Model Selection | SVM |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## LLM Performance Predictors are good initializers for Architecture Search
+*arXiv (2023)*
+
+**Paper**: https://arxiv.org/abs/2310.16712  
+**Source Code**: https://github.com/UBC-NLP/llmas
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Text (prompt) |
+| Objective Dimension | Single-objective (BLEU score) |
+| Prediction Type | Absolute performance |
+| Model Selection | LLM |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Pruning Large Language Models via Accuracy Predictor
+*arXiv (2023)*
+
+**Paper**: https://arxiv.org/abs/2309.09507  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GBDT |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Hidden Design Principles in Zero-Cost Performance Predictors for Neural Architecture Search
+*IJCNN (2023)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10191474  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Network hyperparameters (depth, width, group width, etc.) |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Zero-cost predictors (grad_norm / SNIP / GRASP / SynFlow / Fisher / Jacov / logdet) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## MPENAS: Multi-fidelity Predictor-guided Evolutionary Neural Architecture Search with Zero-cost Proxies  
+*GECCO (2023)*
+
+**Paper**: https://dl.acm.org/doi/abs/10.1145/3583131.3590513  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal (Architecture encoding + ZC proxy outputs + Learning curve data) |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | NGBoost |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-n |
+| Transferability | Without transferability |
+
+---
+
+## Fast Evolutionary Neural Architecture Search by Contrastive Predictor with Linear Regions
+*GECCO (2023)*
+
+**Paper**: https://dl.acm.org/doi/abs/10.1145/3583131.3590452  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance, relation-aware |
+| Model Selection | GCN |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, active learning-based |
+| Transferability | Without transferability |
+
+---
+
+## Latency-Aware Neural Architecture Performance Predictor with Query-to-Tier Technique
+*IEEE Transactions on Circuits and Systems for Video Technology (2023)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10155437  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal (structural features, FLOPs, #parameters) Feature vector-based Fixed length |
+| Objective Dimension | Multi-objective (Accuracy + Latency) |
+| Prediction Type | Accuracy: Relative performance (column-aware) + Absolute performance (tiered scoring) |
+| Model Selection | Transformer |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Multi-Predict: Few Shot Predictors For Efficient Neural Architecture Search  
+*arXiv (2023)*
+
+**Paper**: https://arxiv.org/abs/2306.02459  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Fixed length — Accuracy → Vector-based (zero-cost metrics: parameter gradients, gradient norms, activation sensitivity); Latency → Vector-based (latency on different devices) |
+| Objective Dimension | Single-objective with 2 predictors (Accuracy + Latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | With transferability |
+
+---
+
+## Architecture Augmentation for Performance Predictor via Graph Isomorphism
+*TCYB (2023)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10109990  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling + isomorphism augmentation |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Pooling Graph Convolutional Networks for Structural Performance Prediction
+*International Conference on Machine Learning, Optimization, and Data Science (2022)*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-3-031-25891-6_1  
+**Source Code**: https://github.com/wendli01/morp_gcn
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal, graph-based (operations + kernel size, number of filters + node centrality measures such as harmonic centrality) |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN + MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning  
+*AAAI (2023)*
+
+**Paper**: https://ojs.aaai.org/index.php/AAAI/article/view/29649  
+**Source Code**: https://github.com/Zhengsh123/DCLP
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling + data augmentation |
+| Architecture Representation | Single-modal, graph-based (positive samples perturbed by edge disturbance and attribute masking) |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GIN |
+| Model Training | Self-supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## A General-Purpose Transferable Predictor for Neural Architecture Search
+*Proceedings of the (2023)*
+
+**Paper**: https://epubs.siam.org/doi/abs/10.1137/1.9781611977653.ch81  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling + non-random perturbation augmentation |
+| Architecture Representation | Single-modal Computational Graph (CG)-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GNN + MLP |
+| Model Training | Self-supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | With transferability |
+
+---
+
+## Neural predictor-based automated graph classifier framework
+*Machine Learning (2022)*
+
+**Paper**: https://link.springer.com/article/10.1007/s10994-022-06287-5  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Component-based controlled hierarchical random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## PRE-NAS: Evolutionary Neural Architecture Search With Predictor 
+*TEVC (2023)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/9975797  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RF / GCN / SVR / MLP / Bayesian Ridge / Kernel Ridge / Linear |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, percentile-based stratified sampling according to prediction validation accuracy |
+| Transferability | Without transferability |
+
+---
+
+## Work-in-Progress: Utilizing latency and accuracy predictors for efficient hardware-aware NAS
+*International Conference on Hardware/Software Codesign and System Synthesis (2022)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/9943117  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | ----- |
+| Objective Dimension | Multi-objective (Accuracy + Latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## BERTPerf: Inference Latency Predictor for BERT on ARM big.LITTLE Multi-Core Processors 
+*IEEE Workshop on Signal Processing Systems (2022)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/9919203  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal Vector-based (BERT hyperparameter configurations) |
+| Objective Dimension | Single-objective (Inference latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Generalized Global Ranking-Aware Neural Architecture Ranker for Efficient Image Classifier Search
+*Proceedings of the 30th ACM International Conference on Multimedia (2022)*
+
+**Paper**: https://dl.acm.org/doi/abs/10.1145/3503161.3548149  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal (structural features, FLOPs, #parameters) Feature vector-based Fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance (column-aware) + Absolute performance (tiered scoring) |
+| Model Selection | Transformer |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Towards Leveraging Structure for Neural Predictor in NAS
+*Computer and Knowledge Engineering (2022)*
+
+**Paper**: https://cke.um.ac.ir/article_42708.html  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GBDT |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## MAPLE-Edge: A Runtime Latency Predictor for Edge Devices  
+*CVPR (2022)*
+
+**Paper**: https://openaccess.thecvf.com/content/CVPR2022W/EVW/html/Nair_MAPLE-Edge_A_Runtime_Latency_Predictor_for_Edge_Devices_CVPRW_2022_paper.html  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Targeted uniform sampling |
+| Architecture Representation | Multi-modal (Hardware descriptors + Architecture encoding) |
+| Objective Dimension | Single-objective (Latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | ----- |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Arch-Graph: Acyclic Architecture Relation Predictor for Task-Transferable Neural Architecture Search  
+*CVPR (2022)*
+
+**Paper**: https://openaccess.thecvf.com/content/CVPR2022/html/Huang_Arch-Graph_Acyclic_Architecture_Relation_Predictor_for_Task-Transferable_Neural_Architecture_Search_CVPR_2022_paper.html  
+**Source Code**: https://github.com/Centaurus982034/Arch-Graph
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal (Architecture encoding: Graph-based + Task embeddings: Vector-based including data distribution, task requirements, input/output types, etc.) |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance (relation-aware + column-aware) |
+| Model Selection | GCN (relation-aware) + Architecture relation graph construction (column-aware) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | With transferability |
+
+---
+
+## WPNAS: Neural Architecture Search by jointly using Weight Sharing and Predictor 
+*arXiv (2022)*
+
+**Paper**: https://arxiv.org/abs/2203.02086  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, vector-based and graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP / RNN / Transformer |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Automated design of CNN architecture based on efficient evolutionary search
+*Neurocomputing (2022)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S092523122200340X  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | All individuals from the first three generations |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## CURIOUS: Efficient Neural Architecture Search Based on a Performance Predictor and Evolutionary Search  
+*IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (2022)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/9698855  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Iterative method; first generation sampled randomly from initial pool generated by QMC, then trained predictor selects top-k from remaining pool until termination |
+| Architecture Representation | ----- |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GBDT |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | Without transferability |
+
+---
+
+## TNASP: A Transformer-based NAS Predictor with a Self-evolution Framework
+*NeurIPS (2021)*
+
+**Paper**: https://proceedings.neurips.cc/paper_files/paper/2021/hash/7fa1575cbd7027c9a799983a485c3c2f-Abstract.html  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based (Laplace matrix) |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Transformer + MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, using historical evaluation data as constraints to guide predictor updates |
+| Transferability | Without transferability |
+
+---
+
+## Not All Operations Contribute Equally: Hierarchical Operation-Adaptive Predictor for Neural Architecture Search
+*ICCV (2021)*
+
+**Paper**: https://openaccess.thecvf.com/content/ICCV2021/html/Chen_Not_All_Operations_Contribute_Equally_Hierarchical_Operation-Adaptive_Predictor_for_Neural_ICCV_2021_paper.html  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Operation-adaptive attention module + Cell-level hierarchical gating module |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | Without transferability |
+
+---
+
+## FBNetV3: Joint Architecture-Recipe Search Using Predictor Pretraining  
+*CVPR (2021)*
+
+**Paper**: https://openaccess.thecvf.com/content/CVPR2021/html/Dai_FBNetV3_Joint_Architecture-Recipe_Search_Using_Predictor_Pretraining_CVPR_2021_paper.html  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Constraint-based iterative optimization |
+| Architecture Representation | Multi-modal (Architecture features + Training recipes) |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Self-supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## SSRNAS: Search Space Reduced One-shot NAS by a Recursive Attention-based Predictor with Cell Tensor-flow Diagram
+*IJCNN (2021)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/9533297  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Recursive GAT |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, sampling from iteratively optimized architecture pool |
+| Transferability | Without transferability |
+
+---
+
+## RANK-NOSH: Efficient Predictor-Based Architecture Search via Non-Uniform Successive Halving  
+*ICCV (2021)*
+
+**Paper**: https://openaccess.thecvf.com/content/ICCV2021/html/Wang_RANK-NOSH_Efficient_Predictor-Based_Architecture_Search_via_Non-Uniform_Successive_Halving_ICCV_2021_paper.html  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance, relation-aware |
+| Model Selection | GIN + MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | Without transferability |
+
+---
+
+## Homogeneous Architecture Augmentation for Neural Predictor
+*CoRR (2021)*
+
+**Paper**: https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Homogeneous_Architecture_Augmentation_for_Neural_Predictor_ICCV_2021_paper.html  
+**Source Code**: https://github.com/lyq998/HAAP
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling + isomorphism augmentation |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## HELP: Hardware-Adaptive Efficient Latency Prediction for NAS via Meta-Learning  
+*NeurIPS (2021)*
+
+**Paper**: https://proceedings.neurips.cc/paper/2021/hash/e3251075554389fe91d17a794861d47b-Abstract.html  
+**Source Code**: https://github.com/HayeonLee/HELP
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal (Graph/Vector-based + Hardware embeddings) |
+| Objective Dimension | Single-objective (Latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN / MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | With transferability |
+
+---
+
+## Pareto-Optimal Progressive Neural Architecture Search
+*Proceedings of the Genetic and Evolutionary Computation Conference Companion (2021)*
+
+**Paper**: https://dl.acm.org/doi/abs/10.1145/3449726.3463146  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Exhaustive search over all 1-block cells |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (Accuracy + Training time) |
+| Prediction Type | Absolute performance |
+| Model Selection | LSTM (Accuracy) + NNLS + Dynamic re-indexing (Training time) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, sampling from Pareto front after each cell expansion |
+| Transferability | Without transferability |
+
+---
+
+## Neural predictor based quantum architecture search
+*Machine Learning: Science and Technology (2021)*
+
+**Paper**: https://iopscience.iop.org/article/10.1088/2632-2153/ac28dd/meta  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal Tensor-based Variable length |
+| Objective Dimension | Single-objective (Validation accuracy / Ground state energy) |
+| Prediction Type | Absolute performance |
+| Model Selection | CNN + LSTM |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | With transferability |
+
+---
+
+## A Novel Training Protocol for Performance Predictors of Evolutionary Neural Architecture Search Algorithms
+*TEVC (2021)*
+
+**Paper**: https://ieeexplore.ieee.org/document/9336721  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance, relation-aware |
+| Model Selection | SVM + GBDT + DTree + RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Reducing energy consumption of Neural Architecture Search: An inference latency prediction framework  
+*Sustainable Cities and Society (2021)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S221067072100041X  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling + increased sampling probability for high-latency architectures |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective (Inference latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | LSTM + LightGBM |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Accelerating neural architecture search using performance prediction
+*2017-arXiv*
+
+**Paper**: https://arxiv.org/pdf/1705.10823  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | SVM and RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Neural Predictor for Neural Architecture Search
+*European conference on computer vision (2020)*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-3-030-58526-6_39  
+**Source Code**: https://github.com/ultmaster/neuralpredictor.pytorch
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Not specified |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Surrogate-Assisted Evolutionary Deep Learning Using an End-to-End Random Forest-Based Performance Predictor
+*TEVC (2020)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/8744404  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## A Generic Graph-Based Neural Architecture Encoding Scheme for Predictor-Based NAS
+*European conference on computer vision (2020)*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-3-030-58601-0_12  
+**Source Code**: https://github.com/czyczyyzc/GATES
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GNN + MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | With transferability |
+
+---
+
+## NPENAS: Neural Predictor Guided Evolution for Neural Architecture Search  
+*TNNLS (2022)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/9723446  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling sampling on the key set |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN + GIN |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | Without transferability |
+
+---
+
+## Efficient Sampling for Predictor-Based Neural Architecture Search
+*2021-arXiv*
+
+**Paper**: https://arxiv.org/abs/2011.12043  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | Without transferability |
+
+---
+
+## TAPAS: Train-Less Accuracy Predictor for Architecture Search  
+*AAAI (2019)*
+
+**Paper**: https://ojs.aaai.org/index.php/AAAI/article/view/4282  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal (architecture features + total layers + FLOPs + inference memory + cumulative predicted accuracy) vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | LSTM |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | With transferability |
+
+---
+
+## Ranking-based architecture generation for surrogate-assisted neural architecture search
+*Concurrency and Computation: Practice and Experience (2024)*
+
+**Paper**: https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.8051  
+**Source Code**: https://github.com/outofstyle/RAGS-NAS
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | Without transferability |
+
+---
+
+## Surrogate-Assisted Evolutionary Neural Architecture Search with Architecture Knowledge Transfer
+*CEC (2025)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/11043035  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Latin hypercube sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RBFN |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, the global and local predictors each select one best individual for true evaluation and add to the pool; the global predictor is retrained on the entire pool, while the local predictor is retrained on the pool’s top-k |
+| Transferability | Without transferability |
+
+---
+
+## Benchmarking Quantum Architecture Search with Surrogate Assistance
+*2025-arXiv*
+
+**Paper**: https://arxiv.org/abs/2506.06762  
+**Source Code**: https://github.com/SQuASH-bench/SQuASH
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based (GCN) / Vector-based (RF) |
+| Objective Dimension | Single-objective (circuit fidelity + ACC) |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN / RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Pruning for efficient DenseNet via surrogate-model-assisted genetic algorithm considering neural architecture search proxies
+*Swarm and Evolutionary Computation (2025)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S2210650225001415  
+**Source Code**: https://github.com/JingeunKim/DenseNetPruning
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal Multi-dimensional tensor-based Fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | CART |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top 10% |
+| Transferability | Without transferability |
+
+---
+
+## SiamNAS: Siamese Surrogate Model for Dominance Relation Prediction in Multi-objective Neural Architecture Search  
+*Proceedings of the Genetic and Evolutionary Computation Conference (2025)*
+
+**Paper**: https://dl.acm.org/doi/abs/10.1145/3712256.3726359  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (ACC + #params + FLOPs) |
+| Prediction Type | Relative performance, relation-aware |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Multi-objective evolutionary neural architecture search for medical image classification
+*Applied Soft Computing (2025)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S1568494625005903  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (ACC + computational efficiency + (medical) resource usage/deployability) |
+| Prediction Type | Absolute performance |
+| Model Selection | LLM-enhanced RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, cluster-based sampling |
+| Transferability | Without transferability |
+
+---
+
+## Transferrable Surrogates in Expressive Neural Architecture Search Spaces
+*2025-arXiv*
+
+**Paper**: https://arxiv.org/abs/2504.12971  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | RF: Multi-modal (GRAF encoding (structural features) + ZCP scores) vector-based, fixed length; LM: Single-modal String |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RF + LM |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | With transferability |
+
+---
+
+## A Surrogate Model With Multiple Comparisons and Semi-Online Learning for Evolutionary Neural Architecture Search
+*IEEE Transactions on Emerging Topics in Computational Intelligence (2025)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10935345  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance, relation-aware |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Semi-online: updates are triggered after a preset number of new individuals are truly trained; multiple-comparison sampling—if a new architecture can surpass any in the best pool, it is truly trained |
+| Transferability | Without transferability |
+
+---
+
+## Surrogate-assisted evolutionary neural architecture search based on smart-block discovery
+*Expert Systems with Applications (2025)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S0957417425008590  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Regression model with SGD with Momentum |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, if prediction is unreliable (below threshold) / a new structure not seen in the benchmark, use it to update the surrogate |
+| Transferability | Without transferability |
+
+---
+
+## 3D neural architecture search to optimize segmentation of plant parts
+*Smart Agricultural Technology (2025)*
+
+**Paper**: https://www.sciencedirect.com/science/article/pii/S27723755250001030  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | ----- |
+| Objective Dimension | Single-objective (mean IoU + latency + memory footprint) |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Surrogate Modeling for Efficient Evolutionary Multi-Objective Neural Architecture Search in Super Resolution Image Restoration
+*Proceedings of the 16th International Joint Conference on Computational Intelligence (2024)*
+
+**Paper**: https://www.scitepress.org/Papers/2024/129490/129490.pdf  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Latin hypercube sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective (Peak Signal-to-Noise Ratio) |
+| Prediction Type | Absolute performance |
+| Model Selection | XGBoost |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## An effective surrogate-assisted rank method for evolutionary neural architecture search
+*Applied Soft Computing (2024)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S1568494624011669  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance: relation-aware (triplets) |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, first half random, second half top-k |
+| Transferability | Without transferability |
+
+---
+
+## Pareto-Informed Multi-objective Neural Architecture Search
+*International Conference on Parallel Problem Solving from Nature (2024)*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-3-031-70071-2_23  
+**Source Code**: https://github.com/SYSU22214881/PiMO-NAS
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Latin hypercube sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (Error + Params) |
+| Prediction Type | Absolute performance |
+| Model Selection | GP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, preference vectors dynamically generate sampling directions + batch sample selection by Expected Hypervolume Improvement (ΔHV) |
+| Transferability | Without transferability |
+
+---
+
+## Wind power forecasting based on ensemble deep learning with surrogate-assisted evolutionary NAS and many-objective federated learning
+*Energy (2024)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S036054422402797X  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal (architecture features + lagged meteorological variables) |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## One-Shot Surrogate for Evolutionary Multiobjective Neural Architecture Search
+*CEC (2024)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10611773  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | super-surrogate (Pareto-aware sampling strategy); target surrogate: randomly sample a very small number of real samples |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (error + latency + energy consumption) |
+| Prediction Type | Absolute performance |
+| Model Selection | GP with RBF kernel |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, UCB acquisition function + non-dominated solutions |
+| Transferability | With transferability |
+
+---
+
+## Surrogate-Assisted Evolutionary Neural Architecture Search with Isomorphic Training and Prediction
+*International Conference on Intelligent Computing (2024)*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-981-97-5581-3_16  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling + isomorphism augmentation |
+| Architecture Representation | Two for evolution + surrogate: Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Any |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection every T generations |
+| Transferability | Without transferability |
+
+---
+
+## Similarity surrogate-assisted evolutionary neural architecture search with dual encoding strategy
+*Electronic Research Archive (2024)*
+
+**Paper**: https://www.aimspress.com/aimspress-data/era/2024/2/PDF/era-32-02-050.pdf  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling + isomorphism augmentation |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance: input triplets, output latent vectors; smaller vector distance ---> more similar performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection |
+| Transferability | Without transferability |
+
+---
+
+## Towards Full Forward On-Tiny-Device Learning: A Guided Search for a Randomly Initialized Neural Network**  
+*Algorithms (2024)*
+
+**Paper**: https://www.mdpi.com/1999-4893/17/1/22  
+**Source Code**: https://github.com/andreapisa9/bayesian-elm-search
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | ----- |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RF / GP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, Bayesian Optimization with LCB (Lower Confidence Bound) acquisition function |
+| Transferability | Without transferability |
+
+---
+
+## Maximal sparse convex surrogate-assisted evolutionary convolutional neural architecture search for image segmentation
+*Complex & Intelligent Systems (2023)*
+
+**Paper**: https://link.springer.com/article/10.1007/s40747-023-01166-5  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance (ranking-aware) |
+| Model Selection | Maximal Sparse Convex (MSC) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | New individuals deemed promising by MSC are used to update the surrogate |
+| Transferability | Without transferability |
+
+---
+
+## Surrogate-Assisted Evolutionary Multiobjective Neural Architecture Search Based on Transfer Stacking and Knowledge Distillation
+*TEVC (2023)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10263998  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal Integer-matrix-based Fixed length |
+| Objective Dimension | Multi-objective (ACC + Params + FLOPs + latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | Kriging / GP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, Bayesian Optimization with Expected Improvement |
+| Transferability | With transferability |
+
+---
+
+## Efficient multi-objective evolutionary neural architecture search for U-Nets
+*Applied Soft Computing (2023)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S1568494623008876  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling subnet sampling from supernet |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (ACC + Params) |
+| Prediction Type | Absolute performance |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, K-means cluster sampling |
+| Transferability | Without transferability |
+
+---
+
+## Designing Convolutional Neural Networks using Surrogate-assisted Genetic Algorithm for Medical Image Classification
+*Proceedings of the Companion Conference on Genetic and Evolutionary Computation (2023)*
+
+**Paper**: https://dl.acm.org/doi/abs/10.1145/3583133.3590678  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | XGBoost |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, random sample 20% |
+| Transferability | Without transferability |
+
+---
+
+## Crack detection of continuous casting slab by evolutionary topology backbone search
+*Applied Soft Computing (2023)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S1568494623006816  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | All individuals within the first five generations |
+| Architecture Representation | Single-modal vector-based, variable length |
+| Objective Dimension | Single-objective (Average Precision) |
+| Prediction Type | Absolute performance |
+| Model Selection | Ensemble of DT + SVR + MLP + Logistic Regression |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-k selection every five generations |
+| Transferability | Without transferability |
+
+---
+
+## A surrogate evolutionary neural architecture search algorithm for graph neural networks
+*Applied Soft Computing (2023)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S1568494623005033  
+**Source Code**: https://github.com/chnyliu/CTFGNAS
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP + GBDT + Random Forest (pick the best by Spearman each generation) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, Random |
+| Transferability | Without transferability |
+
+---
+
+## Gated Recurrent Unit Neural Networks for Wind Power Forecasting based on Surrogate-Assisted Evolutionary Neural Architecture Search
+*IEEE 12th Data Driven Control and Learning Systems Conference (DDCLS), 2023*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10166074  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal (architecture features + lagged meteorological variables) Fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Multi-objective Bayesian Optimization for Neural Architecture Search
+*International Conference on Artificial Intelligence and Soft Computing (2022)*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-3-031-23492-7_13  
+**Source Code**: https://github.com/PetraVidnerova/BayONet
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (ACC + Parameters) |
+| Prediction Type | Absolute performance |
+| Model Selection | GP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, sampling from Pareto front |
+| Transferability | Without transferability |
+
+---
+
+## Novel Surrogate Measures Based on a Similarity Network for Neural Architecture Search
+*IEEE Access (2023)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10058912  
+**Source Code**: https://github.com/zekikus/Novel-Surrogate-Measures-based-on-a-Similarity-Network-for-Neural-Architecture-Search
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Non-deep predictor (similarity-network-driven): weighted average / linear regression model |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, add edges in similarity network and node types to decide true evaluation |
+| Transferability | Without transferability |
+
+---
+
+## Human Activity Recognition Based on an Efficient Neural Architecture Search Framework Using Evolutionary Multi-Objective Surrogate-Assisted Algorithms
+*Electronics (2023)*
+
+**Paper**: https://www.mdpi.com/2079-9292/12/1/50  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (weighted F1 + FLOPs + Params) |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP + CART + RBF + GP (pick the current best each generation) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-8 |
+| Transferability | With transferability |
+
+---
+
+## Surrogate-assisted evolutionary neural architecture search with network embedding
+*Complex & Intelligent Systems (2022)*
+
+**Paper**: https://link.springer.com/article/10.1007/s40747-022-00929-w  
+**Source Code**: https://github.com/HandingWangXDGroup/SAENAS-NE
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal formal-grammar string architecture description (converted with graph2vec) -----> vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | Skip-gram model for embeddings (graph2vec), RankNet MLP as surrogate |
+| Model Training | Unsupervised for embeddings, Supervised for surrogate |
+| Interaction with Search Algorithm | Online, after nondominated sorting on fitness + uncertainty, take top-k |
+| Transferability | Without transferability |
+
+---
+
+## Surrogate-Assisted Multiobjective Neural Architecture Search for Real-Time Semantic Segmentation
+*IEEE Transactions on Artificial Intelligence (2023)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/9916102  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (ACC + Latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, obtain candidate set via NSGA-II; prioritize latency-uniform coverage by Kolmogorov–Smirnov (KS) sampling, then fill up to K by ACC |
+| Transferability | Without transferability |
+
+---
+
+## Block-Level Surrogate Models for Inference Time Estimation in Hardware-Aware NAS
+*Joint European Conference on Machine Learning and Knowledge Discovery in Databases (2022)*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-3-031-26419-1_28  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (ACC + Latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | Linear Regression / RF / Boosted Trees / Dense NAS (MLP) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Surrogate-Assisted Neuroevolution
+*Proceedings of the Genetic and Evolutionary Computation Conference (2022)*
+
+**Paper**: https://dl.acm.org/doi/abs/10.1145/3512290.3528703  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | All individuals of each generation until Kendall’s tau reaches a threshold |
+| Architecture Representation | Formal-grammar string architecture description (Net2Tensor conversion) -----> Tensor-based Variable length * Fixed width |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Model Selection | LSTM |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, after Kendall’s tau reaches threshold, active learning, top 25% |
+| Transferability | With transferability |
+
+---
+
+## Bi-fidelity Multi-objective Neural Architecture Search for Adversarial Robustness with Surrogate as a Helper-objective
+*IJCAI (2022)*
+
+**Paper**: https://federated-learning.org/fl-ijcai-2022/Papers/FL-IJCAI-22_paper_22.pdf  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Latin hypercube sampling |
+| Architecture Representation | Single-modal, graph-based (GATES encoding) ----> vector-based, fixed length |
+| Objective Dimension | Multi-objective (error on clean data + error on adversarial data + composite score) |
+| Prediction Type | Absolute performance |
+| Model Selection | GATES (GNN) + MLP / RBF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, every G generations, select solutions with high uncertainty + likely to enter Pareto front |
+| Transferability | Without transferability |
+
+---
+
+## Pareto Rank Surrogate Model for Hardware-aware Neural Architecture Search
+*IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), 2022*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/9804643  
+**Source Code**: https://github.com/IHIaadj/HW-PR-NAS
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Multi-modal Hand-crafted features (FLOPs, Params, depth, input size, #downsamplings, first/last channels) + LSTM sequence encoding (operator sequence) + GCN graph encoding (graph-based representation) |
+| Objective Dimension | Multi-objective (ACC + Latency) |
+| Prediction Type | Absolute performance |
+| Model Selection | GCN (more suitable for ACC) + LSTM (more suitable for Latency) + Regressors (MLP / XGBoost / LightGBM) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Augmenting Novelty Search with a Surrogate Model to Engineer Meta-diversity in Ensembles of Classifiers
+*International Conference on the Applications of Evolutionary Computation (Part of EvoStar), 2022*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-3-031-02462-7_27  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Six distance measures (diversity) |
+| Prediction Type | Predicts distance between two architectures, not performance |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## Action Command Encoding for Surrogate-Assisted Neural Architecture Search
+*IEEE TRANSACTIONS ON COGNITIVE AND DEVELOPMENTAL SYSTEMS (2022)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/9521985  
+**Source Code**: https://github.com/anonymone/ACE-NAS
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal ACEncoding sequence (action commands), converted by LSTM to vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance, relation-aware |
+| Model Selection | LSTM + RankNet |
+| Model Training | LSTM (unsupervised), RankNet (supervised) |
+| Interaction with Search Algorithm | Online, update RankNet every N generations based on ranking |
+| Transferability | Without transferability |
+
+---
+
+## Evolving graph convolutional networks for neural architecture search
+*Neural Computing and Applications (2021)*
+
+**Paper**: https://link.springer.com/article/10.1007/s00521-021-05979-8  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance (relation-aware: greater than, less than / approximately equal) |
+| Model Selection | GCN |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Offline |
+| Transferability | Without transferability |
+
+---
+
+## EMONAS-Net: Efficient multiobjective NAS using surrogate-assisted evolutionary algorithm for 3D medical image segmentation  
+*Artificial Intelligence in Medicine (2021)*
+
+**Paper**: https://www.sciencedirect.com/science/article/abs/pii/S0933365721001470  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | All individuals from the top N generations |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (ESE + Params) |
+| Prediction Type | Absolute performance |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, solutions selected by PBI + nondomination + minimum error + maximum uncertainty |
+| Transferability | Without transferability |
+
+---
+
+## Fast Evolutionary Neural Architecture Search Based on Bayesian Surrogate Model
+*CEC (2021)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/9504999  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance, relation-aware |
+| Model Selection | RF |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, top-1 |
+| Transferability | Without transferability |
+
+---
+
+## Enhancing Multi-objective Evolutionary Neural Architecture Search with Surrogate Models and Potential Point-Guided Local Searches
+*International Conference on Industrial, Engineering and Other Applications of Applied Intelligent Systems (2021)*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-3-030-79457-6_39  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (ERROR + Param (NAS-Bench-101) / FLOPs (NAS-Bench-201)) |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, update every 10 generations (architectures with prediction accuracy above a dynamic threshold in past generations are truly evaluated) |
+| Transferability | Without transferability |
+
+---
+
+## Surrogate-Assisted PSO for Evolving Variable-Length Transferable Blocks for Image Classification
+*TNNLS (2020)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/9349967  
+**Source Code**: Not released
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling + downsampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Single-objective |
+| Prediction Type | Relative performance, relation-aware |
+| Model Selection | SVM |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, when surrogate accuracy exceeds a threshold, if the new solution’s predicted accuracy is better, perform true evaluation |
+| Transferability | Without transferability |
+
+---
+
+## NSGANetV2: Evolutionary Multi-objective Surrogate-Assisted Neural Architecture Search  
+*European conference on computer vision (2020)*
+
+**Paper**: https://link.springer.com/chapter/10.1007/978-3-030-58452-8_3  
+**Source Code**: https://github.com/mikelzc1990/nsganetv2
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal vector-based, fixed length |
+| Objective Dimension | Multi-objective (ACC + #MAdds) |
+| Prediction Type | Absolute performance |
+| Model Selection | MLP / CART / RBF / GP (pick the current best each generation) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online, among non-dominated candidates, choose those with the highest predicted ACC; along the #MAdds axis, select samples from sparse regions |
+| Transferability | Without transferability |
 
 
 
-Title：[Neural Predictor for Neural Architecture Search](https://link.springer.com/chapter/10.1007/978-3-030-58526-6_39)  
-Publication：European conference on computer vision, 2020  
-Source Code：https://github.com/ultmaster/neuralpredictor.pytorch  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GCN  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Surrogate-Assisted Evolutionary Deep Learning Using an End-to-End Random Forest-Based Performance Predictor](https://ieeexplore.ieee.org/abstract/document/8744404)  
-Publication：TEVC, 2020  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[A Generic Graph-Based Neural Architecture Encoding Scheme for Predictor-Based NAS](https://link.springer.com/chapter/10.1007/978-3-030-58601-0_12)  
-Publication：European conference on computer vision, 2020  
-Source Code：https://github.com/czyczyyzc/GATES  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GNN + MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-k  
-Transferability on Task/Dataset/Search Space：With Transferability (usable across heterogeneous search spaces: operation-on-node and operation-on-edge)  
-***  
-Title：[NPENAS: Neural Predictor Guided Evolution for Neural Architecture Search](https://ieeexplore.ieee.org/abstract/document/9723446)  
-Publication：TNNLS,2022  
-Source Code：-----  
-Architecture Sampling：Random sampling on the key set  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GCN + GIN  
-Model Training：Supervised    
-Interaction with Search Algorithm：Online: top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Efficient Sampling for Predictor-Based Neural Architecture Search](https://arxiv.org/abs/2011.12043)  
-Publication：2021-arXiv  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：GCN  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[TAPAS: Train-Less Accuracy Predictor for Architecture Search](https://ojs.aaai.org/index.php/AAAI/article/view/4282)  
-Publication：AAAI, 2019  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal (architecture features + total layers + FLOPs + inference memory + cumulative predicted accuracy) Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：LSTM    
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：With Transferability (directly usable on new datasets)  
-***  
-Title：[Ranking-based architecture generation for surrogate-assisted neural architecture search](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.8051)  
-Publication：Concurrency and Computation: Practice and Experience, 2024  
-Source Code：https://github.com/outofstyle/RAGS-NAS  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Surrogate-Assisted Evolutionary Neural Architecture Search with Architecture Knowledge Transfer](https://ieeexplore.ieee.org/abstract/document/11043035)  
-Publication：CEC, 2025  
-Source Code：-----  
-Architecture Sampling：Latin Hypercube Sampling (LHS)  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RBFN  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: the global and local predictors each select one best individual for true evaluation and add to the pool; the global predictor is retrained on the entire pool, while the local predictor is retrained on the pool’s top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Benchmarking Quantum Architecture Search with Surrogate Assistance](https://arxiv.org/abs/2506.06762)  
-Publication：2025-arXiv  
-Source Code：https://github.com/SQuASH-bench/SQuASH  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based (GCN) / Vector-based (RF)   
-Objective Dimension：Single-objective (circuit fidelity + ACC)  
-Prediction Type：Absolute performance  
-Model Selection：GCN / RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Pruning for efficient DenseNet via surrogate-model-assisted genetic algorithm considering neural architecture search proxies](https://www.sciencedirect.com/science/article/abs/pii/S2210650225001415)  
-Publication：Swarm and Evolutionary Computation,2025  
-Source Code：https://github.com/JingeunKim/DenseNetPruning  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Multi-dimensional tensor-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：CART  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top 10%  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[SiamNAS: Siamese Surrogate Model for Dominance Relation Prediction in Multi-objective Neural Architecture Search](https://dl.acm.org/doi/abs/10.1145/3712256.3726359)  
-Publication：Proceedings of the Genetic and Evolutionary Computation Conference, 2025  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (ACC + #params + FLOPs)  
-Prediction Type：Relative performance (relation-aware)    
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Multi-objective evolutionary neural architecture search for medical image classification](https://www.sciencedirect.com/science/article/abs/pii/S1568494625005903)  
-Publication：Applied Soft Computing, 2025  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (ACC + computational efficiency + (medical) resource usage/deployability)  
-Prediction Type：Absolute performance  
-Model Selection：LLM-enhanced RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: cluster-based sampling  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Transferrable Surrogates in Expressive Neural Architecture Search Spaces](https://arxiv.org/abs/2504.12971)    
-Publication：2025-arXiv  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：RF: Multi-modal (GRAF encoding (structural features) + ZCP scores) Vector-based Fixed length;  LM: Single-modal String  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RF + LM  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-k  
-Transferability on Task/Dataset/Search Space：With Transferability (cross-task/dataset without fine-tuning)  
-***  
-Title：[A Surrogate Model With Multiple Comparisons and Semi-Online Learning for Evolutionary Neural Architecture Search](https://ieeexplore.ieee.org/abstract/document/10935345)  
-Publication：IEEE Transactions on Emerging Topics in Computational Intelligence, 2025  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (relation-aware)  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Semi-online: updates are triggered after a preset number of new individuals are truly trained; multiple-comparison sampling—if a new architecture can surpass any in the best pool, it is truly trained  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Surrogate-assisted evolutionary neural architecture search based on smart-block discovery](https://www.sciencedirect.com/science/article/abs/pii/S0957417425008590)  
-Publication：Expert Systems with Applications, 2025  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Regression model with SGD with Momentum  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: if prediction is unreliable (below threshold) / a new structure not seen in the benchmark, use it to update the surrogate  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[3D neural architecture search to optimize segmentation of plant parts](https://www.sciencedirect.com/science/article/pii/S27723755250001030)  
-Publication：Smart Agricultural Technology,2025  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：-----  
-Objective Dimension：Single-objective (mean IoU + latency + memory footprint)  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Surrogate Modeling for Efficient Evolutionary Multi-Objective Neural Architecture Search in Super Resolution Image Restoration](https://www.scitepress.org/Papers/2024/129490/129490.pdf)  
-Publication：Proceedings of the 16th International Joint Conference on Computational Intelligence, 2024  
-Source Code：-----  
-Architecture Sampling：Latin Hypercube Sampling (LHS)  
-Architecture Representation：Single-modal Vector-based Fixed length    
-Objective Dimension：Single-objective (Peak Signal-to-Noise Ratio)  
-Prediction Type：Absolute performance  
-Model Selection：XGBoost  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[An effective surrogate-assisted rank method for evolutionary neural architecture search](https://www.sciencedirect.com/science/article/abs/pii/S1568494624011669)  
-Publication：Applied Soft Computing, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance: relation-aware (triplets)  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: first half random, second half top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Pareto-Informed Multi-objective Neural Architecture Search](https://link.springer.com/chapter/10.1007/978-3-031-70071-2_23)    
-Publication：International Conference on Parallel Problem Solving from Nature, 2024  
-Source Code：https://github.com/SYSU22214881/PiMO-NAS  
-Architecture Sampling：Latin Hypercube Sampling (LHS)  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (Error + Params)  
-Prediction Type：Absolute performance  
-Model Selection：GP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: preference vectors dynamically generate sampling directions + batch sample selection by Expected Hypervolume Improvement (ΔHV)  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Wind power forecasting based on ensemble deep learning with surrogate-assisted evolutionary NAS and many-objective federated learning](https://www.sciencedirect.com/science/article/abs/pii/S036054422402797X)  
-Publication：Energy, 2024  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal (architecture features + lagged meteorological variables)   
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[One-Shot Surrogate for Evolutionary Multiobjective Neural Architecture Search](https://ieeexplore.ieee.org/abstract/document/10611773)  
-Publication：CEC, 2024  
-Source Code：-----  
-Architecture Sampling：super-surrogate (Pareto-aware sampling strategy); target surrogate: randomly sample a very small number of real samples  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (error + latency + energy consumption)  
-Prediction Type：Absolute performance  
-Model Selection：GP with RBF kernel  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: UCB acquisition function + non-dominated solutions  
-Transferability on Task/Dataset/Search Space：With Transferability: across tasks/datasets/platforms via sub-surrogate sampling + meta-regression  
-***  
-Title：[Surrogate-Assisted Evolutionary Neural Architecture Search with Isomorphic Training and Prediction](https://link.springer.com/chapter/10.1007/978-981-97-5581-3_16)  
-Publication：International Conference on Intelligent Computing, 2024  
-Source Code：-----  
-Architecture Sampling：Random + isomorphism augmentation  
-Architecture Representation：Two for evolution + surrogate: Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Any  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-k every T generations  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Similarity surrogate-assisted evolutionary neural architecture search with dual encoding strategy](https://www.aimspress.com/aimspress-data/era/2024/2/PDF/era-32-02-050.pdf)  
-Publication：Electronic Research Archive, 2024  
-Source Code：-----  
-Architecture Sampling：Random + isomorphism augmentation  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective   
-Prediction Type：Relative performance: input triplets, output latent vectors; smaller vector distance ---> more similar performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Towards Full Forward On-Tiny-Device Learning: A Guided Search for a Randomly Initialized Neural Network](https://www.mdpi.com/1999-4893/17/1/22)  
-Publication：Algorithms, 2024  
-Source Code：https://github.com/andreapisa9/bayesian-elm-search  
-Architecture Sampling：-----  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RF / GP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: Bayesian Optimization with LCB (Lower Confidence Bound) acquisition function  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Maximal sparse convex surrogate-assisted evolutionary convolutional neural architecture search for image segmentation](https://link.springer.com/article/10.1007/s40747-023-01166-5)  
-Publication：Complex & Intelligent Systems, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (ranking-aware)  
-Model Selection：Maximal Sparse Convex (MSC)  
-Model Training：Supervised  
-Interaction with Search Algorithm：New individuals deemed promising by MSC are used to update the surrogate  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Surrogate-Assisted Evolutionary Multiobjective Neural Architecture Search Based on Transfer Stacking and Knowledge Distillation](https://ieeexplore.ieee.org/abstract/document/10263998)  
-Publication：TEVC, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Integer-matrix-based Fixed length  
-Objective Dimension：Multi-objective (ACC + Params + FLOPs + latency)  
-Prediction Type：Absolute performance  
-Model Selection：Kriging / GP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: Bayesian Optimization with Expected Improvement  
-Transferability on Task/Dataset/Search Space：With Transferability: across tasks/datasets/search spaces without fine-tuning, auto-adapting during search iterations  
-***  
-Title：[Efficient multi-objective evolutionary neural architecture search for U-Nets](https://www.sciencedirect.com/science/article/abs/pii/S1568494623008876)  
-Publication：Applied Soft Computing, 2023  
-Source Code：-----  
-Architecture Sampling：Random subnet sampling from supernet  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (ACC + Params)  
-Prediction Type：Absolute performance  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: K-means cluster sampling  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Designing Convolutional Neural Networks using Surrogate-assisted Genetic Algorithm for Medical Image Classification](https://dl.acm.org/doi/abs/10.1145/3583133.3590678)  
-Publication：Proceedings of the Companion Conference on Genetic and Evolutionary Computation, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：XGBoost  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: random sample 20%  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Crack detection of continuous casting slab by evolutionary topology backbone search](https://www.sciencedirect.com/science/article/abs/pii/S1568494623006816)  
-Publication：Applied Soft Computing, 2023  
-Source Code：-----  
-Architecture Sampling：All individuals within the first five generations  
-Architecture Representation：Single-modal Vector-based Variable length  
-Objective Dimension：Single-objective (Average Precision)  
-Prediction Type：Absolute performance    
-Model Selection：Ensemble of DT + SVR + MLP + Logistic Regression  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-k every five generations  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[A surrogate evolutionary neural architecture search algorithm for graph neural networks](https://www.sciencedirect.com/science/article/abs/pii/S1568494623005033)  
-Publication：Applied Soft Computing, 2023  
-Source Code：https://github.com/chnyliu/CTFGNAS  
-Architecture Sampling：Random   
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：MLP + GBDT + Random Forest (pick the best by Spearman each generation)  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: Random  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Gated Recurrent Unit Neural Networks for Wind Power Forecasting based on Surrogate-Assisted Evolutionary Neural Architecture Search](https://ieeexplore.ieee.org/abstract/document/10166074)  
-Publication：IEEE 12th Data Driven Control and Learning Systems Conference (DDCLS), 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal (architecture features + lagged meteorological variables) Fixed length  
-Objective Dimension：Single-objective   
-Prediction Type：Absolute performance  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Multi-objective Bayesian Optimization for Neural Architecture Search](https://link.springer.com/chapter/10.1007/978-3-031-23492-7_13)  
-Publication：International Conference on Artificial Intelligence and Soft Computing, 2022  
-Source Code：https://github.com/PetraVidnerova/BayONet  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (ACC + Parameters)  
-Prediction Type：Absolute performance  
-Model Selection：GP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: sampling from Pareto front  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Novel Surrogate Measures Based on a Similarity Network for Neural Architecture Search](https://ieeexplore.ieee.org/abstract/document/10058912)  
-Publication：IEEE Access, 2023  
-Source Code：https://github.com/zekikus/Novel-Surrogate-Measures-based-on-a-Similarity-Network-for-Neural-Architecture-Search  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Non-deep predictor (similarity-network-driven): weighted average / linear regression model  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: add edges in similarity network and node types to decide true evaluation  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Human Activity Recognition Based on an Efficient Neural Architecture Search Framework Using Evolutionary Multi-Objective Surrogate-Assisted Algorithms](https://www.mdpi.com/2079-9292/12/1/50)  
-Publication：Electronics, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (weighted F1 + FLOPs + Params)  
-Prediction Type：Absolute performance  
-Model Selection：MLP + CART + RBF + GP (pick the current best each generation)  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-8  
-Transferability on Task/Dataset/Search Space：With Transferability: cross-task requires continued online updating  
-***  
-Title：[Surrogate-assisted evolutionary neural architecture search with network embedding](https://link.springer.com/article/10.1007/s40747-022-00929-w)  
-Publication：Complex & Intelligent Systems, 2022  
-Source Code：https://github.com/HandingWangXDGroup/SAENAS-NE  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal formal-grammar string architecture description (converted with graph2vec) -----> Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：Skip-gram model for embeddings (graph2vec), RankNet MLP as surrogate  
-Model Training：Unsupervised for embeddings, Supervised for surrogate  
-Interaction with Search Algorithm：Online: after nondominated sorting on fitness + uncertainty, take top-k  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Surrogate-Assisted Multiobjective Neural Architecture Search for Real-Time Semantic Segmentation](https://ieeexplore.ieee.org/abstract/document/9916102)  
-Publication：IEEE Transactions on Artificial Intelligence, 2023  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (ACC + Latency)  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: obtain candidate set via NSGA-II; prioritize latency-uniform coverage by Kolmogorov–Smirnov (KS) sampling, then fill up to K by ACC  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Block-Level Surrogate Models for Inference Time Estimation in Hardware-Aware NAS](https://link.springer.com/chapter/10.1007/978-3-031-26419-1_28)  
-Publication：Joint European Conference on Machine Learning and Knowledge Discovery in Databases, 2022  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (ACC + Latency)  
-Prediction Type：Absolute performance  
-Model Selection：Linear Regression / RF / Boosted Trees / Dense NAS (MLP)  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Surrogate-Assisted Neuroevolution](https://dl.acm.org/doi/abs/10.1145/3512290.3528703)  
-Publication：Proceedings of the Genetic and Evolutionary Computation Conference, 2022  
-Source Code：-----  
-Architecture Sampling：All individuals of each generation until Kendall’s tau reaches a threshold  
-Architecture Representation：Formal-grammar string architecture description (Net2Tensor conversion) -----> Tensor-based Variable length * Fixed width  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：LSTM  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: after Kendall’s tau reaches threshold, active learning, top 25%  
-Transferability on Task/Dataset/Search Space：With Transferability: cross-dataset without fine-tuning  
-***  
-Title：[Bi-fidelity Multi-objective Neural Architecture Search for Adversarial Robustness with Surrogate as a Helper-objective](https://federated-learning.org/fl-ijcai-2022/Papers/FL-IJCAI-22_paper_22.pdf)  
-Publication：IJCAI, 2022  
-Source Code：-----  
-Architecture Sampling：Latin Hypercube Sampling (LHS)  
-Architecture Representation：Single-modal Graph-based (GATES encoding) ----> Vector-based Fixed length  
-Objective Dimension：Multi-objective (error on clean data + error on adversarial data + composite score)  
-Prediction Type：Absolute performance  
-Model Selection：GATES (GNN) + MLP / RBF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: every G generations, select solutions with high uncertainty + likely to enter Pareto front  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Pareto Rank Surrogate Model for Hardware-aware Neural Architecture Search](https://ieeexplore.ieee.org/abstract/document/9804643)  
-Publication：IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), 2022  
-Source Code：https://github.com/IHIaadj/HW-PR-NAS  
-Architecture Sampling：Random  
-Architecture Representation：Multi-modal Hand-crafted features (FLOPs, Params, depth, input size, #downsamplings, first/last channels) + LSTM sequence encoding (operator sequence) + GCN graph encoding (graph-based representation)  
-Objective Dimension：Multi-objective (ACC + Latency)  
-Prediction Type：Absolute performance  
-Model Selection：GCN (more suitable for ACC) + LSTM (more suitable for Latency) + Regressors (MLP / XGBoost / LightGBM)  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Augmenting Novelty Search with a Surrogate Model to Engineer Meta-diversity in Ensembles of Classifiers](https://link.springer.com/chapter/10.1007/978-3-031-02462-7_27)  
-Publication：International Conference on the Applications of Evolutionary Computation (Part of EvoStar), 2022    
-Source Code：-----    
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Six distance measures (diversity)  
-Prediction Type：Predicts distance between two architectures, not performance  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Action Command Encoding for Surrogate-Assisted Neural Architecture Search](https://ieeexplore.ieee.org/abstract/document/9521985)  
-Publication：IEEE TRANSACTIONS ON COGNITIVE AND DEVELOPMENTAL SYSTEMS, 2022  
-Source Code：https://github.com/anonymone/ACE-NAS  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal ACEncoding sequence (action commands), converted by LSTM to Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (relation-aware)  
-Model Selection：LSTM + RankNet  
-Model Training：LSTM (unsupervised), RankNet (supervised)  
-Interaction with Search Algorithm：Online: update RankNet every N generations based on ranking   
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Evolving graph convolutional networks for neural architecture search](https://link.springer.com/article/10.1007/s00521-021-05979-8)  
-Publication：Neural Computing and Applications, 2021  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (relation-aware: greater than, less than / approximately equal)  
-Model Selection：GCN  
-Model Training：Supervised  
-Interaction with Search Algorithm：Offline  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[EMONAS-Net: Efficient multiobjective NAS using surrogate-assisted evolutionary algorithm for 3D medical image segmentation](https://www.sciencedirect.com/science/article/abs/pii/S0933365721001470)  
-Publication：Artificial Intelligence in Medicine, 2021  
-Source Code：-----  
-Architecture Sampling：All individuals from the top N generations  
-Architecture Representation：Single-modal Vector-based Fixed length   
-Objective Dimension：Multi-objective (ESE + Params)  
-Prediction Type：Absolute performance  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: solutions selected by PBI + nondomination + minimum error + maximum uncertainty  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Fast Evolutionary Neural Architecture Search Based on Bayesian Surrogate Model](https://ieeexplore.ieee.org/abstract/document/9504999)  
-Publication：CEC, 2021  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (relation-aware)  
-Model Selection：RF  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: top-1  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Enhancing Multi-objective Evolutionary Neural Architecture Search with Surrogate Models and Potential Point-Guided Local Searches](https://link.springer.com/chapter/10.1007/978-3-030-79457-6_39)  
-Publication：International Conference on Industrial, Engineering and Other Applications of Applied Intelligent Systems, 2021  
-Source Code：-----  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (ERROR + Param (NAS-Bench-101) / FLOPs (NAS-Bench-201))  
-Prediction Type：Absolute performance  
-Model Selection：MLP  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: update every 10 generations (architectures with prediction accuracy above a dynamic threshold in past generations are truly evaluated)  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[Surrogate-Assisted PSO for Evolving Variable-Length Transferable Blocks for Image Classification](https://ieeexplore.ieee.org/abstract/document/9349967)  
-Publication：TNNLS, 2020  
-Source Code：-----  
-Architecture Sampling：Random + downsampling  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Single-objective  
-Prediction Type：Relative performance (relation-aware)  
-Model Selection：SVM  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: when surrogate accuracy exceeds a threshold, if the new solution’s predicted accuracy is better, perform true evaluation  
-Transferability on Task/Dataset/Search Space：Without Transferability  
-***  
-Title：[NSGANetV2: Evolutionary Multi-objective Surrogate-Assisted Neural Architecture Search](https://link.springer.com/chapter/10.1007/978-3-030-58452-8_3)  
-Publication：European conference on computer vision, 2020  
-Source Code：https://github.com/mikelzc1990/nsganetv2  
-Architecture Sampling：Random  
-Architecture Representation：Single-modal Vector-based Fixed length  
-Objective Dimension：Multi-objective (ACC + #MAdds)  
-Prediction Type：Absolute performance  
-Model Selection：MLP / CART / RBF / GP (pick the current best each generation)  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: among non-dominated candidates, choose those with the highest predicted ACC; along the #MAdds axis, select samples from sparse regions  
-Transferability on Task/Dataset/Search Space：Without Transferability  
+
 
 
 
