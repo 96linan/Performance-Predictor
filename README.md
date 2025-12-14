@@ -1,6 +1,8 @@
+## This repository primarily collects and organizes research works on performance predictor–based neural architecture search (NAS), with a particular focus on the experimental results reported in the literature. It provides a structured overview of how different predictors are evaluated across search spaces, tasks, and objectives. This repository will be continuously updated to incorporate newly published studies and emerging experimental evidence.
 
 
 
+## 🔬 Literature Overview
 
 ## RATs-NAS: Redirection of Adjacent Trails on Graph Convolutional Networks for Predictor-Based Neural Architecture Search
 *IEEE Transactions on Artificial Intelligence (2024)*
@@ -2401,14 +2403,11 @@
 
 
 
+## 📊 Experimental Results
 
-
-
-
-# 9.16
-NAS-Bench-101
+# NAS-Bench-101
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [RATs-NAS](https://ieeexplore.ieee.org/abstract/document/10685480) | 94.41 | ----- | ----- | ----- | ----- | ----- | 150 | ----- | ----- | ----- |
 | [CARL](https://arxiv.org/abs/2506.04001) | 94.23 | ----- | ----- | ----- | ----- | ----- | 150 | ----- | ----- | ----- |
@@ -2446,10 +2445,10 @@ NAS-Bench-101
 | [SSENAS](https://www.aimspress.com/aimspress-data/era/2024/2/PDF/era-32-02-050.pdf) | 93.18 | ----- | ----- | ----- | ----- | ----- | 40 | ----- | ----- | ----- |
 | [SAENAS-NE](https://link.springer.com/article/10.1007/s40747-022-00929-w) | 94.08 | ----- | 94.72 | ----- | ----- | ----- | 150 | ----- | ----- | ----- |
 
-NAS-Bench-201
+# NAS-Bench-201
 --------------------
 **CIFAR-10**
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [RATs-NAS](https://ieeexplore.ieee.org/abstract/document/10685480) | 94.36 | ----- | ----- | ----- | ----- | ----- | 150 | ----- | ----- | ----- |
 | [CARL](https://arxiv.org/abs/2506.04001) | 94.37 | ----- | ----- | ----- | ----- | ----- | 80 | ----- | ----- | ----- |
@@ -2509,7 +2508,7 @@ NAS-Bench-201
 
 ***
 **CIFAR-100**
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [RATs-NAS](https://ieeexplore.ieee.org/abstract/document/10685480) | 73.50 | ----- | ----- | ----- | ----- | ----- | 150 | ----- | ----- | ----- |
 | [CARL](https://arxiv.org/abs/2506.04001) | 73.51 | ----- | ----- | ----- | ----- | ----- | 80 | ----- | ----- | ----- |
@@ -2581,7 +2580,7 @@ NAS-Bench-201
 
 ***
 **ImageNet-16**
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [RATs-NAS](https://ieeexplore.ieee.org/abstract/document/10685480) | 47.07 | ----- | ----- | ----- | ----- | ----- | 150 | ----- | ----- | ----- |
 | [CARL](https://arxiv.org/abs/2506.04001) | 47.31 | ----- | ----- | ----- | ----- | ----- | 80 | ----- | ----- | ----- |
@@ -2633,7 +2632,7 @@ NAS-Bench-201
 ***
 NAS-Bench-301
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [WeakPNAG](https://link.springer.com/chapter/10.1007/978-981-96-2064-7_17) | ----- | ----- | 95.01 | ----- | ----- | ----- | 96 | ----- | ----- | ----- |
 | [CL-fine-tune](https://epubs.siam.org/doi/abs/10.1137/1.9781611977653.ch81) | ----- | ----- | 94.83 | ----- | ----- | ----- | 800 | ----- | ----- | ----- |
@@ -2648,7 +2647,7 @@ DARTS
 **ImageNet**
 
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [CARL](https://arxiv.org/abs/2506.04001) | 76.1 | 92.8 | ----- | ----- | ----- | 0.25 | 100 | ----- | 5.3 | ----- |
 | [SDGP](https://ieeexplore.ieee.org/abstract/document/10438213) | 76.2 | 92.8 | ----- | 0.01 | ----- | ----- | 400(NB101-C10) | 546 | 5.41 | ----- |
@@ -2662,7 +2661,7 @@ DARTS
 **CIFAR-10**
 
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [CARL](https://arxiv.org/abs/2506.04001) | 97.67 | ----- | ----- | ----- | ----- | 0.25 | 100 | ----- | 3.7 | ----- |
 | [SR-NAS](https://arxiv.org/abs/2505.15832) | 97.34 | ----- | ----- | 0.01 | ----- | ----- | 100 | ----- | 3.9 | ----- |
@@ -2693,7 +2692,7 @@ DARTS
 
  TransNAS-Bench-101 Micro
 --------------------
-| 算法 | Cls. Obj. (%) | Cls. Scene (%) | Auto. SSIM (10^-3) | Normal. SSIM (10^-3) | Sem. Seg. mIoU (%) | Room. L2 loss (10^-3) | Jigsaw (%) | Quary |
+| Method | Cls. Obj. (%) | Cls. Scene (%) | Auto. SSIM (10^-3) | Normal. SSIM (10^-3) | Sem. Seg. mIoU (%) | Room. L2 loss (10^-3) | Jigsaw (%) | Quary |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [CARL](https://arxiv.org/abs/2506.04001) | 45.69 | 54.78 | 57.01 | 57.77 | 25.80 | 60.92 | 94.84 | 50 |
 | [MPENAS](https://dl.acm.org/doi/abs/10.1145/3583131.3590513) | 45.24 | 54.77 | 56.82 | 58.14 | 25.38 | 60.69 | 94.93 | 200 |
@@ -2702,7 +2701,7 @@ DARTS
 
  TransNAS-Bench-101 Macro
 --------------------
-| 算法 | Cls. Obj. (%) | Cls. Scene (%) | Auto. SSIM (10^-3) | Normal. SSIM (10^-3) | Sem. Seg. mIoU (%) | Room. L2 loss (10^-3) | Jigsaw (%) | Quary |
+| Method | Cls. Obj. (%) | Cls. Scene (%) | Auto. SSIM (10^-3) | Normal. SSIM (10^-3) | Sem. Seg. mIoU (%) | Room. L2 loss (10^-3) | Jigsaw (%) | Quary |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [CARL](https://arxiv.org/abs/2506.04001) | 47.45 | 56.92 | 74.12 | 62.44 | 29.22 | 57.68 | 96.89 | 50 |
 | [MPENAS](https://dl.acm.org/doi/abs/10.1145/3583131.3590513) | 47.23 | 56.49 | 73.26 | 61.54 | 28.70 | 58.74 | 96.67 | 200 |
@@ -2710,7 +2709,7 @@ DARTS
 
 NAS-Bench-NLP
 --------------------
-| 算法 | Log PPL | Quary |
+| Method | Log PPL | Quary |
 | :----: | :----: | :----: |
 | [CARL](https://arxiv.org/abs/2506.04001) | 4.572 | 100 |
 
@@ -2719,21 +2718,21 @@ OFA
 **CIFAR-10**
 
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [SPNAS](https://ieeexplore.ieee.org/abstract/document/10841460) | 98.20 | ----- | ----- | 1.4 | ----- | ----- | 400 | ----- | 6.33 | ----- |
 ***
 **CIFAR-100**
 
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [SPNAS](https://ieeexplore.ieee.org/abstract/document/10841460) | 87.26 | ----- | ----- | 1.6 | ----- | ----- | 400 | ----- | 6.74 | ----- |
 ***
 **ImageNet**
 
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [SR-NAS](https://arxiv.org/abs/2505.15832) | 76.65 | ----- | ----- | ----- | ----- | ----- | 100 | ----- | ----- | ----- |
 | [SPNAS](https://ieeexplore.ieee.org/abstract/document/10841460) | 78.62 | 94.07 | ----- | 0.37 | ----- | ----- | 400 | ----- | 6.64 | ----- |
@@ -2745,7 +2744,7 @@ OFA
 **ImageNet-1k**
 
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [CLCDLP](https://www.sciencedirect.com/science/article/abs/pii/S0020025524006972) | 77.0 | ----- | ----- | ----- | ----- | ----- | 900 | ----- | ----- | 25.2 |
 | [CLCDLP](https://www.sciencedirect.com/science/article/abs/pii/S0020025524006972) | 77.8 | ----- | ----- | ----- | ----- | ----- | 900 | ----- | ----- | 27.4 |
@@ -2770,14 +2769,14 @@ OFA
 
 ENAS
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [HOP](https://openaccess.thecvf.com/content/ICCV2021/html/Chen_Not_All_Operations_Contribute_Equally_Hierarchical_Operation-Adaptive_Predictor_for_Neural_ICCV_2021_paper.html) | 97.48 | ----- | ----- | ----- | ----- | ----- | 600 | ----- | 3.9 | ----- |
 | [GATES](https://link.springer.com/chapter/10.1007/978-3-030-58601-0_12) | 97.42 | ----- | ----- | ----- | ----- | ----- | 600 | ----- | 4.1 | ----- |
 
 CIFAR-10
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [CIMNet](https://ieeexplore.ieee.org/abstract/document/10551739) | 94.7 | 99.8 | ----- | ----- | ----- | ----- | 3200 | 188 | 8.9 | 98.6 |
 | [A holistic approach...](https://www.sciencedirect.com/science/article/pii/S1568494625001437) | ----- | ----- | 75 | ----- | ----- | 23 | 55291 | ----- | ----- | ----- |
@@ -2810,7 +2809,7 @@ CIFAR-10
 
 CIFAR-100
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [CIMNet](https://ieeexplore.ieee.org/abstract/document/10551739) | 74.4 | 95.7 | ----- | ----- | ----- | ----- | 3200 | 101 | 8.5 | 152.3 |
 | [MPE-NAS](https://www.sciencedirect.com/science/article/abs/pii/S0925231224004351) | 80.41 | ----- | ----- | ----- | ----- | 0.81 | ----- | ----- | 6.6 | ----- |
@@ -2830,7 +2829,7 @@ CIFAR-100
 
 IMAGENET
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [LRENAS](https://www.sciencedirect.com/science/article/abs/pii/S2210650225001142) | 79.2 | 94.6 | ----- | ----- | ----- | 0.7 | 300 | ----- | 6.1 | ----- |
 | [MSuNAS](https://link.springer.com/chapter/10.1007/978-3-030-58452-8_3) | 75.9 | ----- | ----- | ----- | ----- | ----- | 350 | ----- | ----- | ----- |
@@ -2838,7 +2837,7 @@ IMAGENET
 
 IMAGENET-1K
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [SparseNAS](https://www.sciencedirect.com/science/article/pii/S0950705124012541) | 76.7 | ----- | ----- | 1.06 | ----- | 13.1 | 1000 | ----- | ----- | ----- |
 | [FBNetV3-A](https://openaccess.thecvf.com/content/CVPR2021/html/Dai_FBNetV3_Joint_Architecture-Recipe_Search_Using_Predictor_Pretraining_CVPR_2021_paper.html) | 79.1 | 94.5 | ----- | ----- | ----- | 445.83 | 240 | 357 | ----- | ----- |
@@ -2848,7 +2847,7 @@ IMAGENET-1K
 
 Tiny ImageNet
 --------------------
-| 算法 | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
+| Method | Top-1 Test Accuracy (%) | Top-5 Test Accuracy (%) | Valid ACC (%) | Search Cost A (GPU days) | Search Cost B (GPU days) | Search Cost C (GPU days) | Quary | FLOPs (M) | Params (M) | inference latency (ms) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [CIMNet](https://ieeexplore.ieee.org/abstract/document/10551739) | 64.6 | 85.4 | ----- | ----- | ----- | ----- | 3200 | 158 | 8.9 | 97.9 |
 
