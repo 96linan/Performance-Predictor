@@ -2,17 +2,26 @@
 
 # Literature Details
 
-Title：[RATs-NAS: Redirection of Adjacent Trails on Graph Convolutional Networks for Predictor-Based Neural Architecture Search](https://ieeexplore.ieee.org/abstract/document/10685480)  
-Publication：IEEE Transactions on Artificial Intelligence-2024  
-Source Code：-----  
-Architecture Sampling：Random sampling  
-Architecture Representation：Single-modal Graph-based  
-Objective Dimension：Single-objective  
-Prediction Type：Absolute performance  
-Model Selection：RAT-GCN (RAT: adaptive weighting of adjacency matrix)  
-Model Training：Supervised  
-Interaction with Search Algorithm：Online: partition-based search sampling  
-Transferability on Task/Dataset/Search Space：Without Transferability  
+**RATs-NAS: Redirection of Adjacent Trails on Graph Convolutional Networks for Predictor-Based Neural Architecture Search**  
+*IEEE Transactions on Artificial Intelligence (2024)*
+
+**Paper**: https://ieeexplore.ieee.org/abstract/document/10685480  
+**Source Code**: Not released
+
+---
+
+### Key Settings
+
+| Item | Value |
+| --- | --- |
+| Architecture Sampling | Random sampling |
+| Architecture Representation | Single-modal, graph-based |
+| Objective Dimension | Single-objective |
+| Prediction Type | Absolute performance |
+| Predictor Model | RAT-GCN (RAT: adaptive adjacency reweighting) |
+| Model Training | Supervised |
+| Interaction with Search Algorithm | Online (partition-based search sampling) |
+| Transferability (Task, Dataset, Search Space) | Without transferability |
 ***  
 Title：[CIMNet: Joint Search for Neural Network and Computing-in-Memory Architecture](https://ieeexplore.ieee.org/abstract/document/10551739)  
 Publication：IEEE Micro-2024  
