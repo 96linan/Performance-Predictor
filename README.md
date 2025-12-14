@@ -2816,7 +2816,6 @@ CIFAR-100
 | [grad_norm](https://ieeexplore.ieee.org/abstract/document/10191474) | 63.9 | ----- | ----- | ----- | ----- | ----- | ----- | 31.42 | 0.469 | ----- |
 | [snip](https://ieeexplore.ieee.org/abstract/document/10191474) | 55.41 | ----- | ----- | ----- | ----- | ----- | ----- | 40.02 | 0.575 | ----- |
 | [grasp](https://ieeexplore.ieee.org/abstract/document/10191474) | 62.32 | ----- | ----- | ----- | ----- | ----- | ----- | 30.93 | 0.468 | ----- |
-| [synflow](https://ieeexplore.ieee.org/abstract/document/10191474) | 69.36 | ----- | ----- | ----- | ----- | ----- | ----- | 46.41 | 0.497 | ----- |
 | [fisher](https://ieeexplore.ieee.org/abstract/document/10191474) | 53.29 | ----- | ----- | ----- | ----- | ----- | ----- | 35.79 | 0.517 | ----- |
 | [jacov](https://ieeexplore.ieee.org/abstract/document/10191474) | 27.57 | ----- | ----- | ----- | ----- | ----- | ----- | 34.71 | 0.037 | ----- |
 | [logdet](https://ieeexplore.ieee.org/abstract/document/10191474) | 43.85 | ----- | ----- | ----- | ----- | ----- | ----- | 49.70 | 0.058 | ----- |
