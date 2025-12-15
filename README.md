@@ -12,7 +12,7 @@
 
 | Item | Value |
 | --- | --- |
-| Architecture Sampling | Random sampling sampling |
+| Architecture Sampling | Random sampling |
 | Architecture Representation | Single-modal, graph-based |
 | Objective Dimension | Single-objective |
 | Prediction Type | Absolute performance |
@@ -430,7 +430,7 @@
 
 | Item | Value |
 | --- | --- |
-| Architecture Sampling | Random sampling sampling of architecture pairs |
+| Architecture Sampling | Random sampling |
 | Architecture Representation | Difference-based encoding between architectures |
 | Objective Dimension | Single-objective |
 | Prediction Type | Relative performance |
@@ -1477,7 +1477,7 @@
 
 | Item | Value |
 | --- | --- |
-| Architecture Sampling | Random sampling sampling |
+| Architecture Sampling | Random sampling |
 | Architecture Representation | Single-modal vector-based, fixed length |
 | Objective Dimension | Single-objective |
 | Prediction Type | Absolute performance |
@@ -1553,7 +1553,7 @@
 
 | Item | Value |
 | --- | --- |
-| Architecture Sampling | Random sampling sampling on the key set |
+| Architecture Sampling | Random sampling |
 | Architecture Representation | Single-modal, graph-based |
 | Objective Dimension | Single-objective |
 | Prediction Type | Absolute performance |
